@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Research Report|Dalal &amp; Broacha</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="css/morphext.css" rel="stylesheet">
+        <link href="css/ress.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    </head>
+
+           <body data-spy="scroll" data-target=".navbar" data-offset="280" class="inner-pages">
+           <div style="padding-left:16px">
+            <h2>Research Reports</h2> </div>
+            <ul class="nav nav-tabs mb-3">
+                <li class="nav-item">
+                    <a href="#home" data-toggle="tab" aria-expanded="false" class="nav-link">
+                        <i class="mdi mdi-home-variant d-md-none d-block"></i>
+                        <span class="d-none d-md-block">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                        <a href="#profile" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                            <i class="mdi mdi-account-circle d-md-none d-block"></i>
+                            <span class="d-none d-md-block">Profile</span>
+                        </a>
+                </li>
+            <li class="nav-item">
+            <a href="#settings" data-toggle="tab" aria-expanded="false" class="nav-link">
+            <i class="mdi mdi-settings-outline d-md-none d-block"></i>
+            
+            <span class="d-none d-md-block">Settings</span>
+            </a>
+            </li>
+            </ul>
+            
+            
+            <div class="tab-content">
+                <div class="tab-pane" id="home">
+                    <p>HOME</p>
+                </div>
+            
+            <div class="tab-pane show active" id="profile">
+            <p>PROFILE</p>
+            </div>
+                <div class="tab-pane" id="settings">
+                    <p>Profile</p>
+                    <div class="content">
+            <section class="reports">
+                <div class="container">
+
+                    <!--<div class="heading">   <h2>DOWNLOADABLE FORMS</h2>  </div>-->
+                    <ul id="research-report">
+                        <li> <h4><b>&#9658 KYC Forms</b></h4></li>
+                        <li><a href="pdfs/Individual Client KYC Form_1.0_2022_wef April 2022.pdf" target="_blank">Individual (Combined - Trading & Demat)</a> </li> 
+                        <li><a href="pdfs/Non-Individual KYC Form_30_12_2020.pdf" target="_blank">Non-Individual (Combined - Trading & Demat)</a> </li>
+                        <li><a href="KYC/Trading/New CKYC KRA form_Individual_Version1.0_April 2022.pdf" target="_blank">Individual CKYC  KRA Form</a> </li>
+                        <li><a href="KYC/Trading/New CKYC KRA form_Non Individual_Version1.0_April 2022.pdf" target="_blank">New CKYC KRA form_Non Individual</a> 
+                        <li><a href="pdfs/DALAL INDIVIDUAL MODIFICATION FORM_01092021.pdf" target="_blank"> Modification cum ReKYC form_Individual </a> </li>
+                        <li><a href="pdfs/DALAL NON INDIVIDUAL MODIFICATION FORM_01092021.pdf" target="_blank"> Modification cum ReKYC form_Non Individual</a></li>
+                        <li><a href="pdfs/Income Declaration Form_2510.docx" target="_blank">Income Declaration Form</a> </li>
+                        <li><a href="pdfs/Income Declaration Form_Non individual_2510.docx" target="_blank">Income Declaration Form_Non individual</a> </li>
+                        <li><a href="pdfs/Running Account Authorization_version1.0_2021.pdf" target="_blank">Running Account Authorisation</a> </li>
+                        <li><a href="pdfs/Nomination Request_ Version 1.1_2022.pdf" target="_blank">Nomination and No Nomination Request Form</a> </li>
+                        <li><a href="pdfs/Power of Attorney_Version 1.0_2022.pdf" target="_blank">Power of Attorney</a> </li>
+                        <li> <h4><b>&#9658 Policies</b></h4></li>
+                        <li><a href="DOWNLOADABLEFORMS/POLICY FOR MARGIN COLLECTION & REPORTING.pdf" target="_blank">1. POLICY FOR MARGIN COLLECTION & REPORTING</a></li>
+                        <li><a href="DOWNLOADABLEFORMS/INTERNAL CONTROL POLICY.pdf" target="_blank">2. INTERNAL CONTROL POLICY</a></li>
+                        <li><a href="DOWNLOADABLEFORMS/WRITE UP ON PRE-FUNDED INSTRUMENTS.pdf" target="_blank">3. WRITE UP ON PRE-FUNDED INSTRUMENTS</a></li>
+                        <li><a href="DOWNLOADABLEFORMS/RMS POLICY.pdf" target="_blank">4. RMS POLICY</a></li>
+                        <li><a href="DOWNLOADABLEFORMS/POLICY ON LIMIT SETTING.pdf" target="_blank">5. POLICY ON LIMIT SETTING</a></li>
+                        <li><a href="DOWNLOADABLEFORMS/POLICY FOR INACTIVE AND DORMANT ACCOUNT.pdf" target="_blank">6. POLICY FOR INACTIVE AND DORMANT ACCOUNT</a></li>
+                        <li><a href="DOWNLOADABLEFORMS/INVESTORS GRIEVANCE REDRESSAL POLICY.pdf" target="_blank">7. INVESTORS GRIEVANCE REDRESSAL POLICY</a></li>
+                        <li><a href="DOWNLOADABLEFORMS/CODE OF CONDUCT FOR PREVENTION OF INSIDER TRADING.pdf" target="_blank">8. CODE OF CONDUCT FOR PREVENTION OF INSIDER TRADING</a></li>
+                        <li><a href="PMLA/DB PMLA policy_Version 1.4_June_21.pdf" target="_blank">9. Policies and Procedures for combating Money Laundering(ML) Or Terrorist Financing(TF)</a> </li>
+                        <li><a href="DOWNLOADABLEFORMS/POLICY FOR CLIENT CODE MDIFICATION.pdf" target="_blank">10. POLICY FOR CLIENT CODE MDIFICATION</a></li>
+                        <li><a href="DOWNLOADABLEFORMS/POLICY REGARDING UNAUTHENTICATED NEWS CIRCULATED .pdf" target="_blank">11. POLICY REGARDING UNAUTHENTICATED NEWS CIRCULATED </a></li>
+						<li> <h4><b>&#9658 Dealing Between Client and Stock Broker</b></h4></li>
+						<li><a href="Dealings_btw_clients_&stock_brokers/SEBICir03122009.pdf" target="_blank">Copy of SEBI Circular Dtd: 03-12-2009</a> </li>
+						<li> <h4><b>&#9658 PMS</b></h4></li>
+						<li><a href="pdfs/PMS Disclosure Document.pdf" target="_blank">Disclosure</a> </li>
+						<li><br/></li>
+						<li><br/></li>
+						<li> <h4><b>&#9658 Useful Links</b></h4></li>
+                        <li><a href="pdfs/Policies & Procedures_Version1.0_2022.pdf" target="_blank"> Policies & Procedures</a> </li>
+						<li><a href="http://www.bseindia.com/investors/client_regislanguages.aspx?expandable=3" target="_blank">Client Registration Documents in Vernacular Languages</a> </li>
+						<li><a href="pdfs/Investor Grievances.pdf" target="_blank">Investor Grievances</a> </li>
+						<li><a href="pdfs/General-DOs-and-DONTs.pdf" target="_blank"> Do & Don’ts</a> </li>
+						<li><a href="pdfs/Awareness about Secondary Markets.pdf" target="_blank">Awareness About Secondary Markets</a> </li>
+						<li><a href="pdfs/NSE_Investor-Alerts-and-Investor-Rights-and-Obligations.pdf" target="_blank">Awareness about Investors Rights and Obligations</a> </li>
+						<li><a href="pdfs/Risk-Disclosure.pdf" target="_blank">Risk & Disclosure</a></li>
+						<li> <h4><b>&#9658 Other Documents</b></h4></li>
+						<li><a href="pdfs/AMENDMENT TO PMLA RULES.pdf" target="_blank">Linking Aadhar Card with Demat accounts</a> </li>
+						<li><a href="pdfs/Duedate31.3.2018In pursuance of clause (a) and clause (c) of sub-rule (17) of rule 9 of the PMLA.pdf" target="_blank">PMLA Update</a> </li>
+						<li><a href="pdfs/Aadhar Card Updation Form.pdf" target="_blank">Aadhar Card Updation Form</a> </li>
+						<li><br/></li>
+						<li><br/></li>
+				
+                    </ul>
+
+                    
+                </div>
+            </section>
+                            
+        </div>
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+
+
+  
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script>
+            function openTeam() { document.getElementById("team").style.width = "100%"; }
+            function closeTeam() { document.getElementById("team").style.width = "0%"; }
+        </script>
+
+        
+        <script src="js/bootstrap.js"></script>
+        
+        <script>
+            $(".js-rotating").Morphext({
+                animation: "fadeOut",
+                separator: "|", // Overrides default ","
+                speed: 11200, // Overrides default 2000
+                complete: function () {  }
+            });
+        </script>
+        <script src="js/main.js"></script>
+	
+    </body>
+</html>

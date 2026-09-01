@@ -1,0 +1,1 @@
+<?php header("Location: http://www.dalal-broacha.com/index.php?site=db"); ?>
