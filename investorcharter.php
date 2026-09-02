@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Dalal &amp; Broacha</title>
+<title>Investorcharter &mdash; Dalal &amp; Broacha | Stock Broking &amp; Wealth Management</title>
 <link rel="stylesheet" type="text/css" href="css/reset.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 
@@ -105,45 +105,45 @@
 	</div>
 	<div id="content" class="home">
 		<div class="left" id="dowloadableform_left">
-		    <h1><a href="http://www.dalalbroacha.com/sqlfiles/index.asp" target="_blank"><img src="images/text_download.png" alt="Click here to View Reports" /></a></h1>
+		    <h1><a href="http://www.dalalbroacha.com/sqlfiles/index.asp" target="_blank" rel="noopener noreferrer"><img src="images/text_download.png" alt="Click here to View Reports" /></a></h1>
 			<ul>
 				<li class="main_header"><img src="images/text_kyc.png" alt="KFC Forms"></li>
-                <li class="sub_header"><a href="pdfs/Dalal_regn_Ind_DP_28_08_2017.pdf" target="_blank">Combined KYC forms<br />(Trading & Demat)</a></li>
-                <li class="links"><a href="pdfs/KYC-Individual-Combined-Trading-DPForm.pdf" target="_blank">Individual</a></li>
-                <li class="links"><a href="pdfs/KYC-Non-Individual-Combined-Trading-DPForm.pdf" target="_blank">Non-Individual</a></li>
+                <li class="sub_header"><a href="pdfs/Dalal_regn_Ind_DP_28_08_2017.pdf" target="_blank" rel="noopener noreferrer">Combined KYC forms<br />(Trading & Demat)</a></li>
+                <li class="links"><a href="pdfs/KYC-Individual-Combined-Trading-DPForm.pdf" target="_blank" rel="noopener noreferrer">Individual</a></li>
+                <li class="links"><a href="pdfs/KYC-Non-Individual-Combined-Trading-DPForm.pdf" target="_blank" rel="noopener noreferrer">Non-Individual</a></li>
                 <!-- <li class="sub_header">Trading :</li> -->
-                <!-- <li class="links"><a href="KYC/Trading/KYC-NonIndividual.pdf" target="_blank">Non-Individual</a></li> -->
-                <li class="links"><a href="KYC/Trading/RMS Policy.doc" target="_blank">RMS Policy</a></li>
-                <li class="links"><a href="KYC/Trading/Internal Control Policy.doc" target="_blank">Internal Control Policy</a></li>
+                <!-- <li class="links"><a href="KYC/Trading/KYC-NonIndividual.pdf" target="_blank" rel="noopener noreferrer">Non-Individual</a></li> -->
+                <li class="links"><a href="KYC/Trading/RMS Policy.doc" target="_blank" rel="noopener noreferrer">RMS Policy</a></li>
+                <li class="links"><a href="KYC/Trading/Internal Control Policy.doc" target="_blank" rel="noopener noreferrer">Internal Control Policy</a></li>
                 <!-- <li class="sub_header">DEMAT:</li> -->
-                <!-- <li class="links"><a href="KYC/Demat/KYC-DP(NonIndividual).pdf" target="_blank">Non-Individual</a></li> -->
+                <!-- <li class="links"><a href="KYC/Demat/KYC-DP(NonIndividual).pdf" target="_blank" rel="noopener noreferrer">Non-Individual</a></li> -->
                 <li class="sub_header">INTERNET BASED TRADING:</li>
-                <li class="links"><a href="KYC/Internet Based Trading/IBT-NSE.PDF" target="_blank">NSE</a></li>
-                <li class="links"><a href="KYC/Internet Based Trading/IBT-BSE.PDF" target="_blank">BSE</a></li>
+                <li class="links"><a href="KYC/Internet Based Trading/IBT-NSE.PDF" target="_blank" rel="noopener noreferrer">NSE</a></li>
+                <li class="links"><a href="KYC/Internet Based Trading/IBT-BSE.PDF" target="_blank" rel="noopener noreferrer">BSE</a></li>
 			</ul>
 		</div>
 		<div id="dowloadableform_right">
 			<ul>
 				<li class="main_header"><img src="images/text_pmla.png" alt="PMLA Policy"></li>
-				<li class="sub_header"><a href="PMLA/PMLA-Policy.pdf" target="_blank">PMLA POLICY</a></li>
-                <li class="sub_header" style="padding-top: 11px; line-height: 18px;"><a href="PMLA/KYC-AntiMoneyLaundering.doc" target="_blank">KYC-ANTI MONEY LAUNDERING<br />POLICY</a></li>
+				<li class="sub_header"><a href="PMLA/PMLA-Policy.pdf" target="_blank" rel="noopener noreferrer">PMLA POLICY</a></li>
+                <li class="sub_header" style="padding-top: 11px; line-height: 18px;"><a href="PMLA/KYC-AntiMoneyLaundering.doc" target="_blank" rel="noopener noreferrer">KYC-ANTI MONEY LAUNDERING<br />POLICY</a></li>
                 <li class="main_header" style="margin-top: 27px;"><img src="images/text_dcs.png" alt="PMLA Policy"></li>
-				<li class="sub_header" style="padding-top: 12px; line-height: 18px;"><a href="Dealings_btw_clients_&stock_brokers/SEBICir03122009.pdf" target="_blank">COPY OF SEBI CIRCULAR<br />DTD: 3.12.2009</a></li>
-				<li class="sub_header" style="padding-top: 12px; line-height: 18px;"><a href="Dealings_btw_clients_&stock_brokers/PolicyforInactiveDormantclients.doc" target="_blank">POLICY FOR INACTIVE<br />DORMANT CLIENTS</a></li>
+				<li class="sub_header" style="padding-top: 12px; line-height: 18px;"><a href="Dealings_btw_clients_&stock_brokers/SEBICir03122009.pdf" target="_blank" rel="noopener noreferrer">COPY OF SEBI CIRCULAR<br />DTD: 3.12.2009</a></li>
+				<li class="sub_header" style="padding-top: 12px; line-height: 18px;"><a href="Dealings_btw_clients_&stock_brokers/PolicyforInactiveDormantclients.doc" target="_blank" rel="noopener noreferrer">POLICY FOR INACTIVE<br />DORMANT CLIENTS</a></li>
 			</ul>
 		</div>
 		<div id="dowloadableform_last">
 			<ul>
 				<li class="main_header"><img src="images/text_pms.png" alt="PMS"></li>
-				<li class="sub_header"><a href="PMS/Disclosure Document.pdf" target="_blank">Disclosure</a></li><br/>
+				<li class="sub_header"><a href="PMS/Disclosure Document.pdf" target="_blank" rel="noopener noreferrer">Disclosure</a></li><br/>
 
 				<li class="main_header" style = "font-size: 15px;font-weight: bold;color:red;font-style:Arial Black">USEFUL 
                                    LINKS</li>
 				<li class="sub_header"><a href="http://www.bseindia.com/investors/client_regislanguages.aspx?expandable=3" 
-                                   target="_blank">Client Registration Documents in <br/>Vernacular Languages</a></li><br/>
+                                   target="_blank" rel="noopener noreferrer">Client Registration Documents in <br/>Vernacular Languages</a></li><br/>
 				<li class="main_header" style = "font-size: 15px;font-weight: bold;color:red;font-style:Arial Black">OTHER 
                                    DOCUMENTS</li>
-				<li class="sub_header"><a href="pdfs/AMENDMENT TO PMLA RULES.pdf" target="_blank">Linking-Aadhar-
+				<li class="sub_header"><a href="pdfs/AMENDMENT TO PMLA RULES.pdf" target="_blank" rel="noopener noreferrer">Linking-Aadhar-
                                    Card-with-<br/>Demat-accounts</a></li><br/>
 
 			</ul>	
@@ -156,6 +156,6 @@
 		</p>
 	</div>
 </div>
-<p class="footer_txt"><span class="white">Website developed by</span> <span><a class="green" style="text-decoration: none;" href="http://www.colourcraftstudio.co.in" target="_blank">ColourCraft Studio</a></span></p>
+<p class="footer_txt"><span class="white">Website developed by</span> <span><a class="green" style="text-decoration: none;" href="http://www.colourcraftstudio.co.in" target="_blank" rel="noopener noreferrer">ColourCraft Studio</a></span></p>
 </body>
 </html>

@@ -107,22 +107,95 @@ window.addEventListener("load", function () {
     const marquees = document.querySelectorAll(".marquee-track");
 
     marquees.forEach(function (marquee) {
-        marquee.style.animationPlayState = "running";
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            marquee.style.animationPlayState = "paused";
+        } else {
+            marquee.style.animationPlayState = "running";
+        }
+    });
+});
+
+// Pause marquee on hover/focus for WCAG 2.2.2 (CSS-only via .marquee-container:hover)
+document.addEventListener("DOMContentLoaded", function() {
+    const containers = document.querySelectorAll(".marquee-container");
+    containers.forEach(function(container) {
+        const track = container.querySelector(".marquee-track");
+        if (!track) return;
+        container.setAttribute("tabindex", "0");
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Scrolling announcement");
     });
 });
 
 
 /* ---------------------------------------------
- Google map
+ Animation pause / play toggle buttons
  --------------------------------------------- */
+document.addEventListener("DOMContentLoaded", function () {
+
+    // --- Hero banner crossfade toggle ---
+    var heroBtn = document.getElementById("hero-toggle");
+    var heroAnimating = true;
+    if (heroBtn) {
+        heroBtn.addEventListener("click", function () {
+            heroAnimating = !heroAnimating;
+
+            // Pause/resume the xfade keyframe animation on all hero elements
+            var targets = document.querySelectorAll(".band, .band1, .ship");
+            targets.forEach(function (el) {
+                el.style.animationPlayState = heroAnimating ? "running" : "paused";
+            });
+
+            // Also pause/resume the slideInLeft on the band container rows
+            var bandRows = document.querySelectorAll(".bands .row");
+            bandRows.forEach(function (row) {
+                row.style.animationPlayState = heroAnimating ? "running" : "paused";
+            });
+
+            // Toggle ARIA label
+            heroBtn.setAttribute("aria-label",
+                heroAnimating ? "Pause hero animation" : "Play hero animation");
+
+            // Toggle visual state — CSS handles icon swap via .is-paused class
+            heroBtn.classList.toggle("is-paused", !heroAnimating);
+        });
+    }
+
+    // --- Footer marquee toggle (controls ALL marquee tracks) ---
+    var marqueeBtn = document.getElementById("marquee-toggle");
+    var marqueeRunning = true;
+    if (marqueeBtn) {
+        marqueeBtn.addEventListener("click", function () {
+            marqueeRunning = !marqueeRunning;
+
+            // Target ALL marquee tracks on the page
+            var tracks = document.querySelectorAll(".marquee-track");
+            tracks.forEach(function (track) {
+                track.style.animationPlayState = marqueeRunning ? "running" : "paused";
+            });
+
+            // Toggle ARIA label
+            marqueeBtn.setAttribute("aria-label",
+                marqueeRunning ? "Pause scrolling text" : "Play scrolling text");
+
+            // Toggle visual state — CSS handles icon swap via .is-paused class
+            marqueeBtn.classList.toggle("is-paused", !marqueeRunning);
+        });
+    }
+});
+
+
 
 function init_map(){
     (function($){
-        
         $(".map-section").click(function(){
             $(this).toggleClass("js-active");
             $(this).find(".mt-open").toggle();
             $(this).find(".mt-close").toggle();
+            var $iframe = $(".gmaps iframe");
+            if ($iframe.length && $iframe.attr("data-src") && !$iframe.attr("src")) {
+                $iframe.attr("src", $iframe.attr("data-src"));
+            }
         });
     })(jQuery);
 };

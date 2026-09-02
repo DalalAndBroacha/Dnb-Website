@@ -6,8 +6,8 @@ body {
     background-size: cover;
 }
 
-a { color: #000; text-decoration: none; }
-a:hover, a:focus { color: #ee3426; text-decoration: none; }
+a { color: #1a1a1a; text-decoration: underline; }
+a:hover, a:focus { color: #ee3426; text-decoration: underline; }
 
 b { font-weight: 700; }
 
@@ -43,14 +43,14 @@ h2 {
     animation-delay: 0.8s;
 }
 
-.well { border-radius: 0; background-color: #fff; box-shadow: none; border: 0; }
+.well { border-radius: 0; background-color: #fff; box-shadow: none; border: 0; color: #1a1a1a; }
 
 header { padding: 2% 0 0 0; }
 
 nav a { font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 13px; text-transform: uppercase; }
 .navbar-brand img { width: 100%; }
 .navbar-default { background-color: transparent; border: none; }
-.navbar-default .navbar-nav>li>a { color: #000; }
+.navbar-default .navbar-nav>li>a { color: #1a1a1a; }
 .navbar-default .navbar-nav>li>a:hover { color: #ee3426; }
 /*.navbar-default .navbar-nav>.equity>a { color: #fff; background-color: #ee3426; }
 .navbar-default .navbar-nav>.equity>a:hover { color: #000; background-color: #ee3426; }*/
@@ -65,12 +65,12 @@ nav a { font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 13px;
 
 section.section1 { min-height: 95vh; padding-top: 1%; }
 section.section1 .banner { position: relative; width: 100%; min-height: 85vh; }
-section.section1 .ship { position: absolute; bottom: 0; text-align: right; min-height: 85vh; z-index: 3; }
+section.section1 .ship { position: absolute; bottom: 0; text-align: right; min-height: 85vh; z-index: 3; pointer-events: none; }
 section.section1 .ship img { width: 59%; }
-section.section1 .bands { position: absolute; z-index: 1; width: 100%; display: block; margin: 0 auto; }
+section.section1 .bands { position: absolute; z-index: 5; width: 100%; display: block; margin: 0 auto; position: relative; }
 section.section1 .band span, section.section1 .band1 span { font-family: 'Montserrat', sans-serif; display: inline-block; font-weight: 600; font-size: 30px; font-size: 2vw;  text-transform: uppercase; }
-section.section1 .band { width: 55%; padding: 0 7%; background: #ee3426; position: absolute; bottom: 5%; }
-section.section1 .band1 { width: 100%; padding: 0 7%; background: #ee3426; position: absolute; }
+section.section1 .band { width: 55%; padding: 0 7%; background: #ee3426; position: absolute; bottom: 5%; pointer-events: none; }
+section.section1 .band1 { width: 100%; padding: 0 7%; background: #ee3426; position: absolute; pointer-events: none; }
 section.section1 li {   }
 
 
@@ -87,10 +87,16 @@ section.section1 li {   }
 .ship:nth-child(1) { animation: xfade 33s 0s infinite; }
 .ship:nth-child(2) { animation: xfade 33s 11s infinite; }
 .ship:nth-child(3) { animation: xfade 33s 22s infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .band, .band1, .ship { animation: none !important; opacity: 1 !important; }
+}
+
 @keyframes xfade{
-  17% { opacity: 1; }
-  50% { opacity: 0; }
-  80% { opacity: 0; }
+  0%   { opacity: 0; }
+  8%   { opacity: 1; }
+  33%  { opacity: 1; }
+  42%  { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 
@@ -101,9 +107,9 @@ section.section2 .services hr { width: 24%; }
 section.section2 .services p a:hover { color: #000; text-decoration: none; }
 section.section2 .services p a:focus { color: #000; text-decoration: none; font-weight: 400;  }
 section.section2 .services p { font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 20px; letter-spacing: 2px; text-transform: uppercase; display: inline-flex; padding: 1%; width: 49%; }*/
-section.section2 .services li, section.section2 .services li a { color: #8a6d3b; }
-section.section2 .services li a:hover { color: #000; text-decoration: none; }
-section.section2 .services li a:focus { color: #000; text-decoration: none;  }
+section.section2 .services li, section.section2 .services li a { color: #5d4037; }
+section.section2 .services li a:hover { color: #1a1a1a; text-decoration: underline; }
+section.section2 .services li a:focus { color: #000; text-decoration: underline; outline: 3px solid #0053b3; outline-offset: 2px; }
 section.section2 .services li { font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 20px; letter-spacing: 2px; text-transform: uppercase; display: inline-flex; padding: 2%; }
 section.section2 .services .well { border-left: 3px solid #ee3426; }
 section.section2 .services .panel { background: none; border: 0; box-shadow: none; }
@@ -116,7 +122,7 @@ section.section3 .corporate { padding-top: 3%; }
 section.section3 .corporate p { line-height: 21px; text-align: justify; }
 section.section3 .corporate img { width: 94%; }
 section.section3 .corporate .sub-corporate { padding-top: 1%; }
-section.section3 .corporate ul { font-family: 'Montserrat', sans-serif; font-weight: 600; line-height: 20px; letter-spacing: 2px; color: #737577; }
+section.section3 .corporate ul { font-family: 'Montserrat', sans-serif; font-weight: 600; line-height: 20px; letter-spacing: 2px; color: #595959; }
 section.section3 .corporate ul li { display: inline-block; width: 24.5%; }
 section.section3 .corporate ul li hr { width: 24%; }
 
@@ -150,8 +156,8 @@ section.section4 .contact-form .contact-address { padding: 10% 0 1px 0; backgrou
 section.section4 .contact-form .contact-address p { font-weight: 400; line-height: 25px; }
 section.section4 .contact-form form { padding: 5% 0 8% 0; font-size: 15px; }
 section.section4 .contact-form form input[type=submit] { color:#fff; width: 30%; border: 1px solid #d32f2f; background-color: #d32f2f; transition: 1s; }
-section.section4 .contact-form form input[type=submit]:hover, section.section4 .contact-form form input[type=submit]:focus { border: 1px solid #d32f2f; color: #d32f2f; background-color: transparent; }
-section.section4 .contact-form form input, section.section4 .contact-form form textarea { width: 100%; border: 1px solid #ee3426; background-color: transparent; /*margin: 2% 0;*/ padding: 2% 2%; margin: 1% 0; border-radius: 0; }
+section.section4 .contact-form form input[type=submit]:hover, section.section4 .contact-form form input[type=submit]:focus { border: 2px solid #0053b3; color: #0053b3; background-color: transparent; outline: 3px solid #0053b3; outline-offset: 2px; }
+section.section4 .contact-form form input, section.section4 .contact-form form textarea { width: 100%; border: 2px solid #c62828; background-color: transparent; /*margin: 2% 0;*/ padding: 2% 2%; margin: 1% 0; border-radius: 0; }
 section.section4 .contact-form form textarea { height: 200px; }
 section.section4 .gmaps { margin-top: 3%; padding: 0% 0 2% 0; position: relative; background-color: #000; }
 section.section4 .gmaps-add .address { display: inline-block; width: 19%; padding: 1%; vertical-align: top; }
@@ -228,14 +234,14 @@ section.circulars li {
 
 
 footer { background-color: #f4f4f5; padding: 2% 2% 1% 2%; text-align: center; }
-footer p { color: #666666; font-size: 10px; }
+footer p { color: #4a4a4a; font-size: 10px; }
 footer p.big b { font-weight: 500; }
 footer p.big .underline { text-decoration: underline; text-transform: none !important; }
 footer p.big a { padding: 0 0.5%; }
 footer p.big a:hover { color: #d32f2f; }
 footer p.big a.active { color: #d32f2f; }
 footer p.big a.active:hover { color: #666666; }
-footer p.big, footer p.big a { font-size: 11px; color: #666666; text-transform: uppercase; }
+footer p.big, footer p.big a { font-size: 11px; color: #4a4a4a; text-transform: uppercase; }
 
 
 
@@ -302,7 +308,7 @@ section.section2 .services .panel-default>.panel-heading { width: 100%; }
     section.section3 .corporate ul li { /*display: inline-block;*/ display: inline-flex; width: 49.3%; }
     section.section3 .corporate ul li hr { display: none; }
     section.section3 .arrow { /*z-index: 0;*/ position: static; display: block; /*margin-left: 0%;*/ width: 40%; }
-    section.section3 .arrow a { color: #ee3426; border: 1px solid #ee3426; text-transform: uppercase; font-size: 18px; padding: 3% 5%; margin: 5%; }
+    section.section3 .arrow a { color: #ee3426; border: 2px solid #c62828; text-transform: uppercase; font-size: 18px; padding: 3% 5%; margin: 5%; }
     section.section3 .arrow .arrow-right a i, #arrow .arrow-left a i { font-size: 20px; vertical-align: middle; }
     section.section3 .overlay img { width: 100vw; display: block; margin: 0 auto; padding-top: 10%; }
     section.section3 section.meet-team {  min-height: 0vh;  width: 100vw; padding-top: 2%; text-align: left; }
@@ -321,9 +327,9 @@ section.section2 .services .panel-default>.panel-heading { width: 100%; }
     section.section5 .career .detail a:hover { color: #000; }
 
     footer { background-color: #f4f4f5; padding: 2% 2% 1% 2%; text-align: center; }
-    footer p { color: #666666; font-size: 10px; }
+    footer p { color: #4a4a4a; font-size: 10px; }
     footer p.big a { padding: 0 0.5%; }
-    footer p.big, footer p.big a { font-size: 11px; color: #666666; text-transform: uppercase; }
+    footer p.big, footer p.big a { font-size: 11px; color: #4a4a4a; text-transform: uppercase; }
     footer p.big a:hover { color: #ee3426; }
     
 }
@@ -351,7 +357,7 @@ section.section2 .services .panel-default>.panel-heading { width: 100%; }
     section.section2 { min-height: 60vh; }
     section.section2 .services { padding: 3% 5% 2% 5%; }
     section.section2 .services li { padding: 3%; width: 100%; font-size: 5vw; }
-    section.section2 .services li, section.section2 .services li a { color: #7a7a7a; }
+    section.section2 .services li, section.section2 .services li a { color: #4a4a4a; }
     
     section.section3 .arrow { text-align: center; /*padding-right: 15%;*/ margin-right: 0; }
     section.section3 .arrow span.arrow-time, section.section3 .arrow span.arrow-team { width: 51%; }
@@ -388,17 +394,23 @@ section.section2 .services .panel-default>.panel-heading { width: 100%; }
 
 
 .marquee-container {
+  position: relative;
   overflow: hidden; /* Hides the text outside the box */
   white-space: nowrap; /* Forces text to stay on a single line */
   width: 100%;
+  display: flex;
+  align-items: center;
+  /* Subtle fade at edges for polished look */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
 }
 
 .marquee-track {
   display: inline-block;
   padding-left: 100%; /* Starting position off-screen right */
   animation: marquee-effect var(--duration, 300s) linear infinite;
-  animation-play-state: paused;
-
+  will-change: transform;
+  transition: animation-play-state 0.3s ease;
 }
 
 @keyframes marquee-effect {
@@ -413,7 +425,8 @@ section.section2 .services .panel-default>.panel-heading { width: 100%; }
 
 
 /* Optional: Pause animation on mouse hover */
-.marquee-container:hover .marquee-track {
+.marquee-container:hover .marquee-track,
+.marquee-container:focus-within .marquee-track {
   animation-play-state: paused;
 }
 .skip_to_main a

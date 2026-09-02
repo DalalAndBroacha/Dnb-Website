@@ -36,7 +36,17 @@ q:before, q:after {
 
 /* remember to define focus styles! */
 :focus {
-	outline: 0;
+	outline: 2px solid #0053b3;
+	outline-offset: 2px;
+}
+
+/* :focus-visible gives keyboard users a ring while sparing mouse users */
+:focus:not(:focus-visible) {
+	outline: none;
+}
+:focus-visible {
+	outline: 2px solid #0053b3;
+	outline-offset: 2px;
 }
 
 /* remember to highlight inserts somehow! */

@@ -18,6 +18,7 @@
         <link href="css/morphext.css" rel="stylesheet">
         <link href="css/ress.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
+        <link href="css/a11y.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
@@ -37,13 +38,13 @@
     <body data-spy="scroll" data-target=".navbar" data-offset="280" class="inner-pages">
         <!-- Header -->
         <header>
-            <nav class="navbar navbar-default" role="navigation">
+            <nav class="navbar navbar-default" role="navigation" aria-label="Main navigation">
                 <div class="container">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="index.html">
-                            <img alt="Brand" src="img/logo/logo.svg" class="img-responsive">
+                        <a class="navbar-brand" href="index.html" aria-label="Dalal &amp; Broacha Home">
+                        <img alt="Dalal &amp; Broacha" src="img/logo/logo.svg" class="img-responsive">
                         </a>
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse" aria-controls="navbar-primary-collapse" aria-expanded="false" aria-label="Toggle navigation menu">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -56,22 +57,22 @@
                             <li><a href="index.html#about">About</a></li>
                             <li><a href="index.html#contact">Contact</a></li>
                             <li><a href="index.html#career">Careers</a></li>
-                            <!--<li class="equity"><a href="http://www.dalalbroacha.com/newsite/login.aspx" target="_blank">Portals</a></li>-->
+                            <!--<li class="equity"><a href="http://www.dalalbroacha.com/newsite/login.aspx" target="_blank" rel="noopener noreferrer">Portals</a></li>-->
                             <li class="equity">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Portals <span class="caret"></span> </button>
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Portals <span class="caret" aria-hidden="true"></span> </button>
                                     <ul class="dropdown-menu">
-                                        <li><a href="https://www.dalalbroacha.com/newsite/login.html" target="_blank">Equity BackOffice</a></li>
+                                        <li><a href="https://www.dalalbroacha.com/newsite/login.html" target="_blank" rel="noopener noreferrer">Equity BackOffice</a></li>
                                         <li role="separator" class="divider"></li>
-                                        <li><a href="https://www.dalalbroacha.com/ClientPortal" target="_blank">Client Portal</a></li>
+                                        <li><a href="https://www.dalalbroacha.com/ClientPortal" target="_blank" rel="noopener noreferrer">Client Portal</a></li>
                                         <li role="separator" class="divider"></li>
-                                        <li><a href="https://ipo.dalalbroacha.com/ipo" target="_blank">IPO</a></li>
+                                        <li><a href="https://ipo.dalalbroacha.com/ipo" target="_blank" rel="noopener noreferrer">IPO</a></li>
                                         <li role="separator" class="divider"></li>
-                                        <li><a href="https://www.dalalbroacha.com/cdslnewsite/login.aspx" target="_blank">CDSL BackOffice</a></li>
+                                        <li><a href="https://www.dalalbroacha.com/cdslnewsite/login.aspx" target="_blank" rel="noopener noreferrer">CDSL BackOffice</a></li>
                                         <li role="separator" class="divider"></li>
-                                        <li><a href="https://play.google.com/store/apps/details?id=com.dalal.broacha.app&hl=en_IN&gl=US" target="_blank">Mobile App(Android)</a></li>
+                                        <li><a href="https://play.google.com/store/apps/details?id=com.dalal.broacha.app&hl=en_IN&gl=US" target="_blank" rel="noopener noreferrer">Mobile App(Android)</a></li>
                                         <li role="separator" class="divider"></li>
-                                        <li><a href="https://apps.apple.com/us/app/dalal-broacha/id1474594128" target="_blank">Mobile App(iOS)</a></li>
+                                        <li><a href="https://apps.apple.com/us/app/dalal-broacha/id1474594128" target="_blank" rel="noopener noreferrer">Mobile App(iOS)</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -86,8 +87,8 @@
 
 
                     <ul id="research-report" style="list-style:none;">
-                        <li><a href="pdfs/Circulars/_communiques_dp_Transmission-Deletion-of-Name.pdf" target="_blank">Transmission And Deletion Of Name</a></li> 
-                        <li><a href="pdfs/Circulars/_communiques_dp_DP-380-Linkage of PAN-Aadhaar.pdf" target="_blank">AADHAAR Seeding (Linkage of PAN with AADHAAR)</a></li> 
+                        <li><a href="pdfs/Circulars/_communiques_dp_Transmission-Deletion-of-Name.pdf" target="_blank" rel="noopener noreferrer">Transmission And Deletion Of Name</a></li> 
+                        <li><a href="pdfs/Circulars/_communiques_dp_DP-380-Linkage of PAN-Aadhaar.pdf" target="_blank" rel="noopener noreferrer">AADHAAR Seeding (Linkage of PAN with AADHAAR)</a></li> 
                         
                     </ul>
                 </div>
@@ -103,23 +104,23 @@
 <p><span style="font-size:14px;">SEBI Registration Nos. : BSE Cash / BSE Deri / NSE Cash / NSE Deri: INZ000210337 | CDSL: IN &ndash; DP &ndash; 421 &ndash; 2019 | PMS: INP000001975 | Research Analyst: INH000001246</span></p>
 <p><b>GO TO:</b> <a href="http://www.nseindia.com/" target="_blank" style="font-size:12px;">NSE</a> | <a href="http://www.bseindia.com/" target="_blank" style="font-size:12px;">BSE</a> | <a href="http://www.cdslindia.com/" target="_blank" style="font-size:12px;">CDSL</a> | <a href=" https://smartodr.in" target="_blank" style="font-size:12px;">SMARTODR</a></p>
 <p class="big"><span style="font-size:16px;">
-<a href="pdfs/D&amp;B disclaimer.pdf" target="_blank">Disclaimer</a>
-| <a href="circulars.html" target="_blank">Circulars</a>
-| <a href="pdfs/Saarthi 2.0 Mobile App for Investors.pdf" target="_blank">Saarthi 2.0 Mobile App for Investors</a>
-| <a href="pdfs/RISK DISCLOSURE ON DERIVATIVES.pdf" target="_blank">Risk Disclosure On Derivatives</a> 
-| <a href="pdfs/MANDATORY DISPLAY.pdf" target="_blank">Mandatory Display</a>
-| <a href="downloadable_forms.html" target="_blank">Downloadable Forms</a> | <a target="_blank" href="investorcharterandcomplaints.html">INVESTOR CHARTER AND COMPLAINTS</a>
-| <a href="pdfs/Link Pan and Aadhaar Imediately.pdf" target="_blank">Link Pan and Aadhaar</a>
-| <a href="pdfs/Commission Disclosure.pdf" target="_blank">MF Commissions</a> | <a href="pdfs/Advisory for Investors.pdf" target="_blank"> Advisory for Investors</a> 
-| <a href="pdfs/AMFI Details 13062024.pdf" target="_blank">AMFI DETAILS</a>
-| <a href="pdfs/AIF Details.pdf" target="_blank">AIF DETAILS</a>
-| <a href="pdfs/Important Regulatory alerts.pdf" target="_blank"> Important Regulatory Alerts </a> | <a href="uploads/Attention-Investors.pdf" target="_blank">Attention Investor</a> 
-| <a href="pdfs/INVESTORS EDUCATION.pdf" target="_blank">Investor Education</a>
-| <a href="pdfs/DETAILS OF CLIENT BANK ACCOUNTS.pdf" target="_blank">Fund Transfer</a> | <a href="https://www.dalalbroacha.com/ClientPortal/Research" target="_blank">Research Reports</a> 
-| <a href="pdfs/DBSPL CSR Policy.pdf" target="_blank">CSR Policy</a> | <a href="External_Links.html" target="_blank"> SCORES </a> | <a href="Advisory for KYC updation.html" target="_blank"> Advisory for KYC updation </a> 
-| <a href="pdfs/Notification on segregation and monitoring of collateral at client level.pdf" target="_blank"> segregation and monitoring of collateral at client level </a>
+<a href="pdfs/D&amp;B disclaimer.pdf" target="_blank" rel="noopener noreferrer">Disclaimer</a>
+| <a href="circulars.html" target="_blank" rel="noopener noreferrer">Circulars</a>
+| <a href="pdfs/Saarthi 2.0 Mobile App for Investors.pdf" target="_blank" rel="noopener noreferrer">Saarthi 2.0 Mobile App for Investors</a>
+| <a href="pdfs/RISK DISCLOSURE ON DERIVATIVES.pdf" target="_blank" rel="noopener noreferrer">Risk Disclosure On Derivatives</a> 
+| <a href="pdfs/MANDATORY DISPLAY.pdf" target="_blank" rel="noopener noreferrer">Mandatory Display</a>
+| <a href="downloadable_forms.html" target="_blank" rel="noopener noreferrer">Downloadable Forms</a> | <a target="_blank" href="investorcharterandcomplaints.html">INVESTOR CHARTER AND COMPLAINTS</a>
+| <a href="pdfs/Link Pan and Aadhaar Imediately.pdf" target="_blank" rel="noopener noreferrer">Link Pan and Aadhaar</a>
+| <a href="pdfs/Commission Disclosure.pdf" target="_blank" rel="noopener noreferrer">MF Commissions</a> | <a href="pdfs/Advisory for Investors.pdf" target="_blank" rel="noopener noreferrer"> Advisory for Investors</a> 
+| <a href="pdfs/AMFI Details 13062024.pdf" target="_blank" rel="noopener noreferrer">AMFI DETAILS</a>
+| <a href="pdfs/AIF Details.pdf" target="_blank" rel="noopener noreferrer">AIF DETAILS</a>
+| <a href="pdfs/Important Regulatory alerts.pdf" target="_blank" rel="noopener noreferrer"> Important Regulatory Alerts </a> | <a href="uploads/Attention-Investors.pdf" target="_blank" rel="noopener noreferrer">Attention Investor</a> 
+| <a href="pdfs/INVESTORS EDUCATION.pdf" target="_blank" rel="noopener noreferrer">Investor Education</a>
+| <a href="pdfs/DETAILS OF CLIENT BANK ACCOUNTS.pdf" target="_blank" rel="noopener noreferrer">Fund Transfer</a> | <a href="https://www.dalalbroacha.com/ClientPortal/Research" target="_blank" rel="noopener noreferrer">Research Reports</a> 
+| <a href="pdfs/DBSPL CSR Policy.pdf" target="_blank" rel="noopener noreferrer">CSR Policy</a> | <a href="External_Links.html" target="_blank" rel="noopener noreferrer"> SCORES </a> | <a href="Advisory for KYC updation.html" target="_blank" rel="noopener noreferrer"> Advisory for KYC updation </a> 
+| <a href="pdfs/Notification on segregation and monitoring of collateral at client level.pdf" target="_blank" rel="noopener noreferrer"> segregation and monitoring of collateral at client level </a>
 </span></p>
-<!-- | <a href="pdfs/Attention Investors_30082021.pdf" target="_blank">Attention Investor</a>  -->
+<!-- | <a href="pdfs/Attention Investors_30082021.pdf" target="_blank" rel="noopener noreferrer">Attention Investor</a>  -->
 <p>Regd. Office: 506, Maker Chambers V, 221, Nariman Point, Mumbai - 400021.</p>
 <p color:=""><marquee behavior="scroll" direction="left"> <b>Attention Investors: 1) Prevent Unauthorised transactions in your account. Update your Mobile Numbers/Email IDs with your Stock Brokers. Receive information of your transactions directly from Exchange on your Mobile/Email at the end of the Day. 2) Prevent Unauthorized Transactions in your demat account. Update your Mobile Number with your Depository Participant. Receive alerts on your Registered Mobile for all debit and other important transactions in your demat account directly from CDSL / NSDL on the same day. 3) KYC is one time exercise while dealing in securities markets - once KYC is done through a SEBI registered intermediary (Broker, DP, Mutual Fund etc.), you need not undergo the same process again when you approach another intermediary. 4) No need to issue cheques by investors while subscribing to IPO. Just write Bank Account Number &amp; sign in the application form to authorise your bank to make payment in case of allotment. No worries for refund as the money remains in investor&rsquo;s account. 5) With reference to the Notification No. 10/2017/F. No. P.12011/11/2016-ES Cell-DoR issued by Ministry of Finance ,Department of Revenue-New Delhi dtd.13.12.2017 directed, it is now mandatory to obtain Aadhar Number and Permanent Account Number of all the clients by 31st March 2018. In case a client fails to submit the Aadhar Number within the said period his/her account shall cease to be operational(Trading+Demat Account) till the time Aadhar Number is submitted/updated. 6) As per SEBI notification number SEBI/LAD-NRO/GN/2018/24 dated June 08, 2018, transfer of securities of listed companies shall not be processed unless the securities are held in the demat form. The same shall be effective from December 05, 2018. Hence, ensure demat of physical securities well in advance for transfers. 7) Stock Brokers can accept securities as margin from clients only by way of pledge in the depository system w.e.f. September 1, 2020. 8) Update your mobile number &amp; email Id with your stock broker/depository participant and receive OTP directly from depository on your email id and/or mobile number to create pledge. 9) Pay 20% upfront margin of the transaction value to trade in cash market segment. 10) Investors may please refer to the Exchange&#39;s Frequently Asked Questions (FAQs) issued vide notice no. 20200731-7 dated July 31, 2020 and 20200831-45 dated August 31, 2020 and other guidelines issued from time to time in this regard. 11) Check your Securities /MF/ Bonds in the consolidated account statement issued by NSDL/CDSL every month. Issued in the interest of Investors. </b> </marquee></p>
 Dalal &amp; Broacha Stock Broking Pvt. Ltd. &copy; 2018, All Rights Reseved.

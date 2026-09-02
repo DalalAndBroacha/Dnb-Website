@@ -12,9 +12,10 @@ if(isset($_GET["city"])) {
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Dalal &amp; Broacha</title>
+<title>Contact Us — Dalal &amp; Broacha | Stock Broking &amp; Wealth Management</title>
 <link rel="stylesheet" type="text/css" href="css/reset.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/a11y.css" />
 <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
 <script type="text/javascript" src="js/jquery.pngFix.pack.js"></script>
 <script type="text/javascript">
@@ -100,10 +101,8 @@ if(isset($_GET["city"])) {
 	
 
 
-function MM_jumpMenu(targ,selObj,restore){ //v3.0
-  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
-  if (restore) selObj.selectedIndex=0;
-}
+// Removed auto-navigation on select change for accessibility (WCAG 3.2.2)
+// Users now navigate via the Go button
 </script>
 </head>
 <body>
@@ -123,7 +122,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 						<div style="float:left; padding:4px 27px 0px 13px;"> Name: </div>
 						<div>
 							<input name="Name" type="text" id="Name" style="border:solid; border-color: #C0C0C0; border-width:2px; width:175px;" />
-							<div class="errorMsg"></div>
+							<div class="errorMsg sr-only" role="alert"></div>
 						</div>
 					</div>
 					<br />
@@ -131,7 +130,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 						<div style="float:left; padding:4px 30px 0px 13px;"> Email: </div>
 						<div>
 							<input name="Email" type="text" id="Email" style="border:solid; border-color: #C0C0C0; border-width:2px; width:175px;" />
-							<div class="errorMsg"></div>
+							<div class="errorMsg sr-only" role="alert"></div>
 						</div>
 					</div>
 					<br />
@@ -146,12 +145,12 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 						<div style="float:left; padding:4px 10px 0px 13px;"> Message: </div>
 						<div>
 							<textarea name="Message" rows="3" id="Message" style="overflow:hidden; border:solid; border-color: #C0C0C0; width:175px; border-width:2px;"></textarea>
-							<div class="errorMsg"></div>
+							<div class="errorMsg sr-only" role="alert"></div>
 						</div>
 					</div>
 					<br />
 					<div style="padding-left:201px;">
-						<input name="Submit" type="image" id="submitBtn" src="images/send.gif" alt="Send" width="56" height="32" />
+						<button type="submit" id="submitBtn" class="btn btn-primary">Send Message</button>
 					</div>
 				</form>
 				<br />
@@ -212,19 +211,19 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 		<?php include("footer.php"); ?>
 	</div>
 </div>
-<p class="footer_txt"><span class="white">Website developed by</span> <span><a class="green" style="text-decoration: none;" href="http://www.colourcraftstudio.co.in" target="_blank">ColourCraft Studio</a></span></p>
+<p class="footer_txt"><span class="white">Website developed by</span> <span><a class="green" style="text-decoration: none;" href="http://www.colourcraftstudio.co.in" target="_blank" rel="noopener noreferrer">ColourCraft Studio</a></span></p>
 <map name="Map">
 
-<area shape="rect" coords="91,298,140,310" href="contact.php?city=Bangalore" />
-<area shape="rect" coords="109,333,146,343" href="contact.php?city=Chennai">
-<area shape="rect" coords="79,257,103,267" href="contact.php?city=Pune">
-<area shape="rect" coords="82,232,123,242" href="contact.php?city=Mumbai">
+<area shape="rect" coords="91,298,140,310" href="contact.php?city=Bangalore" alt="Bangalore office location" />
+<area shape="rect" coords="109,333,146,343" href="contact.php?city=Chennai" alt="Chennai office location">
+<area shape="rect" coords="79,257,103,267" href="contact.php?city=Pune" alt="Pune office location">
+<area shape="rect" coords="82,232,123,242" href="contact.php?city=Mumbai" alt="Mumbai office location">
 <!--<area shape="rect" coords="88,220,134,228" href="contact.php?city=Badlapur">-->
-<area shape="rect" coords="93,202,137,215" href="contact.php?city=Vadodara">
-<area shape="rect" coords="56,192,82,200" href="contact.php?city=Anand">
+<area shape="rect" coords="93,202,137,215" href="contact.php?city=Vadodara" alt="Vadodara office location">
+<area shape="rect" coords="56,192,82,200" href="contact.php?city=Anand" alt="Anand office location">
 
-<area shape="rect" coords="139,124,166,134" href="contact.php?city=Delhi">
-<area shape="rect" coords="138,153,183,163" href="contact.php?city=Faridabad">
+<area shape="rect" coords="139,124,166,134" href="contact.php?city=Delhi" alt="Delhi office location">
+<area shape="rect" coords="138,153,183,163" href="contact.php?city=Faridabad" alt="Faridabad office location">
 <!--<area shape="rect" coords="211,200,244,210" href="contact.php?city=Kolkata">-->
 </map>
 </body>
