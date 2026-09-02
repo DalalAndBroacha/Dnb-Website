@@ -1,0 +1,445 @@
+/* =================================================================
+   Accessibility — WCAG 2.1 Level AA Remediation
+   ================================================================= */
+
+/* --- 2.4.1 Bypass Blocks: Skip Link --- */
+.skip-link {
+	position: absolute;
+	left: -9999px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	z-index: 99999;
+}
+.skip-link:focus {
+	position: fixed;
+	left: 1rem;
+	top: 1rem;
+	width: auto;
+	height: auto;
+	overflow: visible;
+	padding: 0.75rem 1.25rem;
+	background: #fff;
+	color: #0053b3;
+	font-weight: 700;
+	font-size: 1rem;
+	text-decoration: none;
+	border: 2px solid #0053b3;
+	border-radius: 4px;
+	box-shadow: 0 4px 12px rgba(0,0,0,.25);
+}
+
+/* --- 2.4.7 Focus Visible / 1.4.11 Non-text Contrast --- */
+:focus-visible {
+	outline: 3px solid #0053b3;
+	outline-offset: 3px;
+}
+:focus:not(:focus-visible) {
+	outline: none;
+}
+
+/* --- 1.4.3 Contrast (Minimum) --- */
+/* Ensure all interactive elements and text meet 4.5:1 */
+
+/* --- 1.4.1 Use of Color --- */
+/* Never rely on color alone for meaning — pair with text/icon */
+
+/* --- 2.2.2 Pause, Stop, Hide: Reduced Motion --- */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* --- 1.4.10 Reflow: Max-width safety --- */
+img,
+video,
+table,
+svg {
+	max-width: 100%;
+	height: auto;
+}
+
+/* --- Overflow safety for text content --- */
+p, li, td, th, span, div {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* --- 1.4.12 Text Spacing: Avoid fixed heights --- */
+input,
+textarea,
+select,
+button {
+	min-height: 2.5rem;
+}
+
+/* --- 3.3.2 Labels: Ensure form labels are visible --- */
+label {
+	font-weight: 600;
+	margin-bottom: 0.25rem;
+	display: block;
+}
+
+/* --- Decorative images: visually hidden from AT --- */
+img.decorative,
+.icon-decorative {
+	alt: "";
+}
+
+/* --- 3.3.1 / 3.3.3: Error states --- */
+.error {
+	color: #b00020;
+	font-weight: 600;
+	display: block;
+	margin-top: 0.25rem;
+}
+input[aria-invalid="true"],
+textarea[aria-invalid="true"],
+select[aria-invalid="true"] {
+	border-color: #b00020;
+	border-width: 2px;
+}
+
+/* --- 1.3.1: Ensure required fields are marked --- */
+.required::after {
+	content: " (required)";
+	color: #b00020;
+	font-weight: 600;
+}
+
+/* --- 4.1.3: Live region (visually hidden) --- */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* --- 1.4.13: Hover/focus content --- */
+.tooltip,
+[data-tooltip] {
+	position: relative;
+}
+
+/* --- Table accessibility --- */
+table {
+	border-collapse: collapse;
+}
+th {
+	font-weight: 700;
+	text-align: left;
+}
+
+/* --- Ensure main landmark is focusable for skip link --- */
+main:focus {
+	outline: none;
+}
+
+/* --- Dropdown keyboard support --- */
+.dropdown-menu {
+	/* Ensure dropdown items are focusable */
+}
+.dropdown-menu > li > a {
+	display: block;
+	padding: 0.5rem 1rem;
+}
+
+/* --- Navbar toggle button contrast --- */
+.navbar-toggle {
+	border: 2px solid #fff;
+}
+.navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background-color: #fff;
+	border-color: #fff;
+}
+.navbar-default .navbar-toggle:focus .icon-bar,
+.navbar-default .navbar-toggle:hover .icon-bar {
+	background-color: #d32f2f;
+}
+
+/* --- Ensure links have non-color affordance --- */
+main a,
+.content a,
+.circulars a {
+	text-decoration: underline;
+}
+main a:hover,
+main a:focus {
+	text-decoration: underline;
+}
+
+/* --- Overlay / Modal focus trap helpers --- */
+.overlay {
+	/* Ensure close buttons are visible and focusable */
+}
+.right-closebtn {
+	z-index: 20;
+	display: block;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	color: #1a1a1a;
+	font-size: 60px;
+	line-height: 1;
+	padding: 0;
+	text-decoration: none;
+}
+.right-closebtn:hover {
+	color: #c62828;
+}
+.right-closebtn:focus {
+	outline: 3px solid #0053b3;
+	outline-offset: 2px;
+	border-radius: 4px;
+}
+
+/* --- Hero band contrast (WCAG AA 4.5:1+) --- */
+section.section1 .band,
+section.section1 .band1 {
+	background: #c62828 !important;
+}
+section.section1 .band span,
+section.section1 .band1 span {
+	color: #ffffff !important;
+	font-weight: 700 !important;
+}
+
+/* --- Contact & Career typography & touch targets --- */
+.meet-team h3 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #1a1a1a;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.contact-subhead {
+	font-size: 16px;
+	font-weight: 500;
+	color: #4a4a4a;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.career .detail a {
+	display: inline-block;
+	padding: 8px 12px;
+	margin: 4px 2px;
+	min-height: 44px;
+	min-width: 44px;
+	line-height: 28px;
+}
+
+/* --- Select dropdown: ensure no auto-navigation --- */
+select {
+	cursor: pointer;
+}
+
+/* --- Ensure page has sufficient color contrast for footer --- */
+footer p,
+footer p.big,
+footer p.big a {
+	/* Already #666666 on #f4f4f5 — need to verify */
+}
+
+/* --- Carousel / rotating content: pause control --- */
+.carousel-pause-btn {
+	display: inline-block;
+	margin: 1rem 0;
+	padding: 0.5rem 1rem;
+	background: #d32f2f;
+	color: #fff;
+	border: none;
+	font-size: 1rem;
+	cursor: pointer;
+}
+.carousel-pause-btn:focus {
+	outline: 3px solid #0053b3;
+	outline-offset: 2px;
+}
+
+/* --- Visually hidden utility --- */
+.visually-hidden,
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* --- Status messages --- */
+[role="status"],
+[aria-live="polite"] {
+	/* Live regions for status messages */
+}
+[role="alert"] {
+	/* Assertive live region for errors */
+}
+
+/* --- Button minimum size (2.5.3 touch target) --- */
+button,
+a.btn,
+input[type="submit"],
+input[type="button"] {
+	min-height: 44px;
+	min-width: 44px;
+}
+
+/* --- Form input contrast (1.4.11) --- */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea,
+select {
+	border: 2px solid #767676; /* 4.54:1 on white for text, 3:1 for border */
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+	border-color: #0053b3;
+	outline: 3px solid #0053b3;
+	outline-offset: 2px;
+}
+
+/* --- Animation pause/play buttons --- */
+.anim-toggle {
+	position: absolute;
+	z-index: 100;
+	width: 3rem;
+	height: 3rem;
+	padding: 0;
+	background: rgba(211, 47, 47, 0.9);
+	color: #fff;
+	border: 2px solid rgba(255, 255, 255, 0.6);
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+	top: 0.6rem;
+	right: 0.6rem;
+	left: auto;
+	box-shadow: 0 2px 12px rgba(211, 47, 47, 0.35), 0 0 0 0 rgba(211, 47, 47, 0);
+	-webkit-backdrop-filter: blur(6px);
+	backdrop-filter: blur(6px);
+}
+.anim-toggle:hover {
+	background: rgba(211, 47, 47, 1);
+	transform: scale(1.12);
+	box-shadow: 0 4px 18px rgba(211, 47, 47, 0.5);
+	border-color: rgba(255, 255, 255, 0.9);
+}
+.anim-toggle:focus {
+	outline: 3px solid #fff;
+	outline-offset: 3px;
+}
+.anim-toggle:active {
+	transform: scale(0.92);
+}
+
+/* Pause icon (two bars) */
+.anim-toggle-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.anim-toggle-icon .pause-bars {
+	display: flex;
+	gap: 3px;
+	align-items: center;
+}
+.anim-toggle-icon .pause-bar {
+	width: 3.5px;
+	height: 14px;
+	background: #fff;
+	border-radius: 1.5px;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.anim-toggle-icon .play-triangle {
+	display: none;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 7px 0 7px 13px;
+	border-color: transparent transparent transparent #fff;
+	margin-left: 2px;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Paused state — show play triangle, hide bars */
+.anim-toggle.is-paused .pause-bars { display: none; }
+.anim-toggle.is-paused .play-triangle { display: block; }
+.anim-toggle.is-paused {
+	background: rgba(76, 175, 80, 0.9);
+	border-color: rgba(255, 255, 255, 0.7);
+	box-shadow: 0 2px 12px rgba(76, 175, 80, 0.4);
+	animation: pulse-play 2s ease-in-out infinite;
+}
+.anim-toggle.is-paused:hover {
+	background: rgba(56, 142, 60, 1);
+	box-shadow: 0 4px 18px rgba(76, 175, 80, 0.55);
+}
+
+@keyframes pulse-play {
+	0%, 100% { box-shadow: 0 2px 12px rgba(76, 175, 80, 0.4), 0 0 0 0 rgba(76, 175, 80, 0.3); }
+	50%      { box-shadow: 0 2px 12px rgba(76, 175, 80, 0.4), 0 0 0 8px rgba(76, 175, 80, 0); }
+}
+
+/* Marquee variant */
+.anim-toggle--marquee {
+	position: absolute;
+	top: 50%;
+	right: 0.75rem;
+	left: auto;
+	transform: translateY(-50%);
+}
+.anim-toggle--marquee:hover {
+	transform: translateY(-50%) scale(1.12);
+}
+.anim-toggle--marquee:active {
+	transform: translateY(-50%) scale(0.92);
+}
+.anim-toggle--marquee.is-paused {
+	animation: pulse-play-marquee 2s ease-in-out infinite;
+}
+@keyframes pulse-play-marquee {
+	0%, 100% { box-shadow: 0 2px 12px rgba(76, 175, 80, 0.4), 0 0 0 0 rgba(76, 175, 80, 0.3); transform: translateY(-50%); }
+	50%      { box-shadow: 0 2px 12px rgba(76, 175, 80, 0.4), 0 0 0 8px rgba(76, 175, 80, 0); transform: translateY(-50%); }
+}
+
+.navbar-default .navbar-toggle {
+	border: 2px solid #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
+}

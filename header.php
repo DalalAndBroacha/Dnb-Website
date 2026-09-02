@@ -1,8 +1,8 @@
 
-		<div id="logo"><img src="images/logo.gif" alt="Dalal &amp; Broacha - Logo" /></div>
-		<ul id="menu">
+		<div id="logo"><img src="images/logo.gif" alt="Dalal &amp; Broacha" /></div>
+		<ul id="menu" aria-label="Main navigation menu">
 		<?php if($menu=="home") { ?>
-			<li><a href="index.php" rel="images/menu_home1.gif"><img src="images/menu_home1.gif"  alt="Home" /></a></li>
+			<li><a href="index.php" rel="images/menu_home1.gif" aria-current="page"><img src="images/menu_home1.gif"  alt="Home" /></a></li>
 		<?php } else { ?>
 			<li><a href="index.php" rel="images/menu_home1.gif"><img src="images/menu_home.gif"  alt="Home" /></a></li>
 		<?php } if($menu=="about") { ?>

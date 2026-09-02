@@ -4,43 +4,33 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Dalal &amp; Broacha Stock Broking Pvt. Ltd. provides premier wealth management, equity advisory, portfolio management services (PMS), institutional equity, and research since 1961.">
-	    <title>Home — Dalal &amp; Broacha | Stock Broking &amp; Wealth Management</title>
+	    <title>Dalal &amp; Broacha</title>
 	    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-    	<!-- Preconnect Google Fonts -->
-    	<link rel="preconnect" href="https://fonts.googleapis.com">
-    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    	<!-- Preload LCP Hero Image -->
-    	<link rel="preload" as="image" href="img/ship.png" fetchpriority="high" type="image/png">
-    	<!-- Bootstrap & Core Styles -->
+	    <!--<link href="favicon.ico" rel="icon" type="image/x-icon" />
+    	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />-->
+    	<!-- Bootstrap -->
     	<link href="css/bootstrap.min.css" rel="stylesheet" />
     	<link href="css/animate.css" rel="stylesheet" />
+    	<link href="css/morphext.css" rel="stylesheet" />
     	<link href="css/ress.css" rel="stylesheet" />
     	<link href="css/main.css" rel="stylesheet" />
-        <link href="css/a11y.css" rel="stylesheet" />
-    	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="print" onload="this.media='all'" />
+    	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
     	<!-- Fonts -->
-    	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-    	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-    	<noscript>
-    		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
-    		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet" />
-    		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet" />
-    	</noscript>
+    	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet" />
+    	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" />
 </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="280" class="inner-pages">
-        <h1 class="sr-only">Dalal &amp; Broacha — Stock Broking &amp; Wealth Management</h1>
         <!-- Header -->
     <header>
-        <a class="skip-link" href="#main-content">Skip to Main Content</a>
-        <nav class="navbar navbar-default" role="navigation" aria-label="Main navigation">
+        <div class="skip_to_main"><a class="skip-link" href="#main-content">Skip to Main Content</a></div>
+        <nav class="navbar navbar-default" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html" aria-label="Dalal &amp; Broacha Home">
-                        <img alt="Dalal &amp; Broacha" src="img/logo/logo.svg" width="214" height="31" class="img-responsive">
+                    <a class="navbar-brand" href="index.html">
+                        <img alt="Brand" src="img/logo/logo.svg" class="img-responsive">
                     </a>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse" aria-controls="navbar-primary-collapse" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -51,24 +41,24 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.html#products">Products</a></li>
                         <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html#contact" aria-label="Contact">Contact</a></li>
                         <li><a href="index.html#career">Careers</a></li>
-                        <!--<li class="equity"><a href="http://www.dalalbroacha.com/newsite/login.aspx" target="_blank" rel="noopener noreferrer">Portals</a></li>-->
+                        <!--<li class="equity"><a href="http://www.dalalbroacha.com/newsite/login.aspx" target="_blank">Portals</a></li>-->
                         <li class="equity">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Portals <span class="caret" aria-hidden="true"></span> </button>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Portals <span class="caret"></span> </button>
                                 <ul class="dropdown-menu">
-                                    <li><a href="https://www.dalalbroacha.com/newsite/login.html" target="_blank" rel="noopener noreferrer">Equity BackOffice</a></li>
+                                    <li><a href="https://www.dalalbroacha.com/newsite/login.html" target="_blank">Equity BackOffice</a></li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="https://www.dalalbroacha.com/ClientPortal" target="_blank" rel="noopener noreferrer">Client Portal</a></li>
+                                    <li><a href="https://www.dalalbroacha.com/ClientPortal" target="_blank">Client Portal</a></li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="https://www.dalalbroacha.com/IPO/login.aspx" target="_blank" rel="noopener noreferrer">IPO</a></li>
+                                    <li><a href="https://www.dalalbroacha.com/IPO/login.aspx" target="_blank">IPO</a></li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="https://www.dalalbroacha.com/cdslnewsite/login.aspx" target="_blank" rel="noopener noreferrer">CDSL BackOffice</a></li>
+                                    <li><a href="https://www.dalalbroacha.com/cdslnewsite/login.aspx" target="_blank">CDSL BackOffice</a></li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="https://play.google.com/store/apps/details?id=com.dalal.broacha.app&hl=en_IN&gl=US" target="_blank" rel="noopener noreferrer">Mobile App(Android)</a></li>
+                                    <li><a href="https://play.google.com/store/apps/details?id=com.dalal.broacha.app&hl=en_IN&gl=US" target="_blank">Mobile App(Android)</a></li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="https://apps.apple.com/us/app/dalal-broacha/id1474594128" target="_blank" rel="noopener noreferrer">Mobile App(iOS)</a></li>
+                                    <li><a href="https://apps.apple.com/us/app/dalal-broacha/id1474594128" target="_blank">Mobile App(iOS)</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -81,17 +71,13 @@
     <section class="section1">
         <div class="container-fluid">
         <div class="banner center-align">
-            <div class="ship"><img src="img/ship.png" width="1000" height="773" alt="" role="presentation" fetchpriority="high" /></div>
+            <div class="ship"><img src="img/ship.png" /></div>
         
-            <div class="ship"><img src="img/lighthouse.png" width="1000" height="773" alt="" role="presentation" /></div>
+            <div class="ship"><img src="img/lighthouse.png" /></div>
         
-            <div class="ship"><img src="img/watch.png" width="1000" height="773" alt="" role="presentation" /></div>
+            <div class="ship"><img src="img/watch.png" /></div>
             
             <div class="bands">
-                <button class="anim-toggle" id="hero-toggle" aria-label="Pause hero animation" title="Pause/Play animation">
-                    <span class="anim-toggle-icon" aria-hidden="true"><span class="pause-bars"><span class="pause-bar"></span><span class="pause-bar"></span></span><span class="play-triangle"></span></span>
-                </button>
-
                 <ul class="row animated slideInLeft">
                 	<li class="band"><span class="js-rotating">We provide.</span></li>
                 	<li class="band"><span class="js-rotating">Built carefully</span></li>
@@ -112,70 +98,121 @@
         <div class="container">
             <h2>Our Services</h2>
     
-            <div class="panel panel-default">
-                <div class="panel-heading">
+            <div class="panel panel-default" >
+                <div class="panel-heading" role="tab" >
+                    <h4 class="panel-title"></h4>
+            
                     <ul>
                     	<li class="module module-fade-in"><a aria-controls="service-1" aria-expanded="false" data-parent="#services-mobile" data-toggle="collapse" href="#service-mobile-1"><strong>Wealth Management &amp; Financial Planning</strong></a><br>
                     	<p>With a team of resourceful &amp; highly qualified experts, this desk helps our High Networth Clients, Family Office as well as Corporates manage their money through customised financial solutions.</p>
                     	</li>
                     </ul>
                 </div>
-
-                <div class="panel-heading">
-                    <ul>
-                    	<li class="module module-fade-in"><a aria-controls="service-2" aria-expanded="false" data-parent="#services-mobile" data-toggle="collapse" href="#service-mobile-2"><strong>Portfolio Managment Services</strong></a><br>
-                    	<p>Our portfolio management service is designed keeping in mind the needs of our High Net Worth customers. We offer complete end-to- end solutions for customers who are looking at maximizing their returns through expert fund management.</p>
-                    	</li>
-                    </ul>
+            <!--
+                <div aria-labelledby="headingOne" class="panel-collapse collapse" id="service-mobile-1" role="tabpanel">
+                    <div class="well"><span>With a team of resourceful &amp; highly qualified experts, this desk helps our High Networth Clients, Family Office as well as Corporates manage their money through customised financial solutions.</span></div>
+                </div>
+            -->
+                <div class="panel-heading" role="tab">
+                <h4 class="panel-title"></h4>
+            
+            <ul>
+            	<li class="module module-fade-in"><a aria-controls="service-2" aria-expanded="false" data-parent="#services-mobile" data-toggle="collapse" href="#service-mobile-2"><strong>Portfolio Managment Services</strong></a><br>
+            	<p>Our portfolio management service is designed keeping in mind the needs of our High Net Worth customers. We offer complete end-to- end solutions for customers who are looking at maximizing their returns through expert fund management.</p>
+            	</li>
+            </ul>
+            </div>
+            
+            <!--
+                <div aria-labelledby="headingTwo" class="panel-collapse collapse" id="service-mobile-2" role="tabpanel">
+                <div class="well"><span>Our portfolio management service is designed keeping in mind the needs of our High Net Worth customers. We offer complete end-to- end solutions for customers who are looking at maximizing their returns through expert fund management.</span></div>
+                </div>
+            -->
+            
+                <div class="panel-heading" role="tab">
+                <h4 class="panel-title"></h4>
+                
+                <ul>
+                	<li class="module module-fade-in"><a aria-controls="service-3" aria-expanded="false" data-parent="#services-mobile" data-toggle="collapse" href="#service-mobile-3"><strong>NRI Services</strong></a><br>
+                	<p>Our dedicated NRI desk addresses the various needs of our many NRI clients spread across the globe. We strive to provide comprehensive solutions through expert empirical advice and perspectives drawn from over five decades of customer service.</p>
+                	</li>
+                </ul>
                 </div>
             
-                <div class="panel-heading">
-                    <ul>
-                    	<li class="module module-fade-in"><a aria-controls="service-3" aria-expanded="false" data-parent="#services-mobile" data-toggle="collapse" href="#service-mobile-3"><strong>NRI Services</strong></a><br>
-                    	<p>Our dedicated NRI desk addresses the various needs of our many NRI clients spread across the globe. We strive to provide comprehensive solutions through expert empirical advice and perspectives drawn from over five decades of customer service.</p>
-                    	</li>
-                    </ul>
+            <!--  
+                <div aria-labelledby="headingThree" class="panel-collapse collapse" id="service-mobile-3" role="tabpanel">
+                <div class="well"><span>Our dedicated NRI desk addresses the various needs of our many NRI clients spread across the globe. We strive to provide comprehensive solutions through expert empirical advice and perspectives drawn from over five decades of customer service.</span></div>
                 </div>
+            -->    
             
-                <div class="panel-heading">
-                    <ul>
-                    	<li class="module module-fade-in"><a aria-controls="service-4" aria-expanded="false" data-parent="#services-mobile" data-toggle="collapse" href="#service-mobile-4"><strong>Equity Advisory</strong></a><br>
-                    	<p>Our retail business is the backbone of our company. We emphasise on building steady, long-term relationships and are currently servicing over 20,000 registered clients throughout India, with the help of pan-india branches and widespread associates.</p>
-                    	</li>
-                    </ul>
+                <div class="panel-heading" role="tab">
+                <h4 class="panel-title"></h4>
+                
+                <ul>
+                	<li class="module module-fade-in"><a aria-controls="service-4" aria-expanded="false" data-parent="#services-mobile" data-toggle="collapse" href="#service-mobile-4"><strong>Equity Advisory</strong></a><br>
+                	<p>Our retail business is the backbone of our company. We emphasise on building steady, long-term relationships and are currently servicing over 20,000 registered clients throughout India, with the help of pan-india branches and widespread associates.</p>
+                	</li>
+                </ul>
                 </div>
-            
-                <div class="panel-heading">
-                    <ul>
-                    	<li class="module module-fade-in"><a aria-controls="service-5" aria-expanded="false" data-parent="#services-mobile" data-toggle="collapse" href="#service-mobile-5"><strong>Institutional Equity</strong></a><br>
-                    	<p>Since the past four decades, our Institutional Equity Desk has grown exponentially. Today, we are in business with every major financial institution, bank and mutual fund in India, along with a large number of Foreign Institutional Investors (FIIs). Our IED comprises of two functions &ndash; sales and dealing. The Institutional Equity Desk coordinates with our research department to provide world-class services to our customers.</p>
-                    	</li>
-                    </ul>
+            <!--   
+                <div aria-labelledby="headingFour" class="panel-collapse collapse" id="service-mobile-4" role="tabpanel">
+                <div class="well"><span>Our retail business is the backbone of our company. We emphasise on building steady, long-term relationships and are currently servicing over 20,000 registered clients throughout India, with the help of pan-india branches and widespread associates.</span></div>
                 </div>
-            
-                <div class="panel-heading">
-                    <ul>
-                    	<li class="module module-fade-in"><a aria-controls="service-6" aria-expanded="false" data-parent="#services-mobile" data-toggle="collapse" href="#service-mobile-6"><strong>Fixed Income &amp; Distribution</strong></a><br>
-                    	<p>The distribution desk mainly deals with distribution of third party investment products like Government &amp; Corporate Bonds, Mutual Funds,IPO&rsquo;s and other saving instruments. This desk in coordination with our wealth management team offers clients alternative products to help maximise returns.</p>
-                    	</li>
-                    </ul>
+            -->   
+                <div class="panel-heading" role="tab">
+                <h4 class="panel-title"></h4>
+                
+                <ul>
+                	<li class="module module-fade-in"><a aria-controls="service-5" aria-expanded="false" data-parent="#services-mobile" data-toggle="collapse" href="#service-mobile-5"><strong>Institutional Equity</strong></a><br>
+                	<p>Since the past four decades, our Institutional Equity Desk has grown exponentially. Today, we are in business with every major financial institution, bank and mutual fund in India, along with a large number of Foreign Institutional Investors (FIIs). Our IED comprises of two functions &ndash; sales and dealing. The Institutional Equity Desk coordinates with our research department to provide world-class services to our customers.</p>
+                	</li>
+                </ul>
                 </div>
-            
-                <div class="panel-heading">
-                    <ul>
-                    	<li class="module module-fade-in"><a data-parent="#services-mobile" data-toggle="collapse" href="#service-mobile-7"><strong>DEPOSITORY SERVICES</strong></a><br>
-                    	<p>We offer clients smooth, seamless, and paperless settlement of all trades and transactions.</p>
-                    	</li>
-                    </ul>
+            <!-- 
+                <div aria-labelledby="headingFive" class="panel-collapse collapse" id="service-mobile-5" role="tabpanel">
+                <div class="well"><span>Since the past four decades, our Institutional Equity Desk has grown exponentially. Today, we are in business with every major financial institution, bank and mutual fund in India, along with a large number of Foreign Institutional Investors (FIIs). Our IED comprises of two functions &ndash; sales and dealing. The Institutional Equity Desk coordinates with our research department to provide world-class services to our customers.</span></div>
                 </div>
-            
-                <div class="panel-heading">
-                    <ul>
-                    	<li class="module module-fade-in"><a data-parent="#services-mobile" data-toggle="collapse" href="#service-mobile-8"><strong>Equity Research</strong></a><br>
-                    	<p>Our Research caters to both Institutional and Retail Clients. We are an idea based research outfit and we follow a bottoms up approach. We have a team of six analysts, each specialising in different sectors.</p>
-                    	</li>
-                    </ul>
+            -->  
+                <div class="panel-heading" role="tab">
+                <h4 class="panel-title"></h4>
+                
+                <ul>
+                	<li class="module module-fade-in"><a aria-controls="service-6" aria-expanded="false" data-parent="#services-mobile" data-toggle="collapse" href="#service-mobile-6"><strong>Fixed Income &amp; Distribution</strong></a><br>
+                	<p>The distribution desk mainly deals with distribution of third party investment products like Government &amp; Corporate Bonds, Mutual Funds,IPO&rsquo;s and other saving instruments. This desk in coordination with our wealth management team offers clients alternative products to help maximise returns.</p>
+                	</li>
+                </ul>
                 </div>
+            <!--  
+                <div aria-labelledby="headingSix" class="panel-collapse collapse" id="service-mobile-6" role="tabpanel">
+                <div class="well"><span>The distribution desk mainly deals with distribution of third party investment products like Government &amp; Corporate Bonds, Mutual Funds,IPO&rsquo;s and other saving instruments. This desk in coordination with our wealth management team offers clients alternative products to help maximise returns.</span></div>
+                </div>
+            -->
+                <div class="panel-heading" role="tab">
+                <h4 class="panel-title"></h4>
+                
+                <ul>
+                	<li class="module module-fade-in"><a data-parent="#services-mobile" data-toggle="collapse" href="#service-mobile-7"><strong>DEPOSITORY SERVICES</strong></a><br>
+                	<p>We offer clients smooth, seamless, and paperless settlement of all trades and transactions.</p>
+                	</li>
+                </ul>
+                </div>
+            <!--   
+                <div aria-labelledby="headingSeven" class="panel-collapse collapse" id="service-mobile-7" role="tabpanel">
+                <div class="well"><span>We offer clients smooth, seamless, and paperless settlement of all trades and transactions.</span></div>
+                </div>
+            -->
+                    <div class="panel-heading" role="tab">
+                    <h4 class="panel-title"></h4><ul>
+                	<li class="module module-fade-in"><a data-parent="#services-mobile" data-toggle="collapse" href="#service-mobile-8"><strong>Equity Research</strong></a><br>
+                	<p>Our Research caters to both Institutional and Retail Clients. We are an idea based research outfit and we follow a bottoms up approach. We have a team of six analysts, each specialising in different sectors.</p>
+                	</li>
+                </ul>
+                </div>
+            <!--
+                <div aria-labelledby="headingEight" class="panel-collapse collapse" id="service-mobile-8" role="tabpanel">
+                    <div class="well"><span>Our Research caters to both Institutional and Retail Clients. We are an idea based research outfit and we follow a bottoms up approach. We have a team of six analysts, each specialising in different sectors.</span></div>
+                </div>
+            -->
             </div>
     
             <ul aria-multiselectable="true" class="panel-group services visible-xs" id="services-mobile" role="tablist"></ul>
@@ -195,7 +232,7 @@
     For over five decades, we have successfully preserved our core philosophy, and we attribute all our achievements to our founding principles of Long Term Value investing, zero speculation, integrity and transparency in all our dealings.</p>
     </div>
     
-    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12"><img class="img-responsive module module-fade-in" src="img/tree.png" width="1000" height="679" alt="Dalal &amp; Broacha corporate growth tree" />
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12"><img class="img-responsive module module-fade-in" src="img/tree.png" />
     <p><b>MILESTONES</b><br />
     Dalal &amp; Broacha has always followed a path of consistent and sustainable growth, adding milestones that realize value for the customer while strengthening our market presence.</p>
     </div>
@@ -217,14 +254,14 @@
     </div>
     
     <div class="arrow">
-    <div class="arrow-right module module-right"><span class="arrow-team"><a href="#team" onclick="openTeam()" role="button">Our Team</a> </span></div>
+    <div class="arrow-right module module-right"><span class="arrow-team"><a onclick="openTeam()">Our Team</a> </span></div>
     </div>
     
-    <div class="overlay" id="timeline" role="dialog" aria-modal="true" aria-label="Milestones timeline">
-    <div class="overlay-content"><img src="img/timeline.svg" width="1000" height="600" alt="Milestones timeline" /></div>
-    <button type="button" class="right-closebtn" onclick="closeTime()" aria-label="Close timeline">&times;</button></div>
+    <div class="overlay" id="timeline">
+    <div class="overlay-content"><img src="img/timeline.svg" /></div>
+    <a class="right-closebtn" href="javascript:void(0)" onclick="closeTime()">&times;</a></div>
     
-    <div class="overlay" id="team" role="dialog" aria-modal="true" aria-label="Our Team">
+    <div class="overlay" id="team">
     <div class="overlay-content">
     <section class="meet-team">
     <div class="container">
@@ -232,28 +269,28 @@
     
     <div class="team">
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-    <h3>NAILESH DALAL</h3>
+    <h4>NAILESH DALAL</h4>
     
     <p>Nailesh Dalal comes with 35 years of experience in financial solutions. He has played a leading role in the firm&rsquo;s retail and financial functioning. His strength lies in people management and understanding each individual&rsquo;s needs; be it customers or employees.</p>
     
     <hr /></div>
     
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-    <h3>Vipul Dalal</h3>
+    <h4>Vipul Dalal</h4>
     
     <p>He has been responsible for building strong institutional relationships over the last 30 years for the organisation. The focus on institutional business increased after Vipul architected the approach, and we enjoy a coveted position amongst institutional buyers largely due to his efforts.</p>
     
     <hr /></div>
     
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-    <h3>Hriday Dalal</h3>
+    <h4>Hriday Dalal</h4>
     
     <p>The third generation family member to join the business. He leads the focus on business development as well as heads the firms corporate treasury desk. Hriday has been instrumental in establishing the NRI desk and PMS services for the organisation.</p>
     
     <hr /></div>
     
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-    <h3>Nilay Dalal</h3>
+    <h4>Nilay Dalal</h4>
     
     <p>Second of the third-generation family members attached to the business, has worked on various verticals of the business and now has set his focus on business development and maintaining client relationships.</p>
     
@@ -262,73 +299,61 @@
     <div class="clearfix hidden-xs"></div>
     
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-    <h3>Rohan Dalal</h3>
+    <h4>Rohan Dalal</h4>
     
     <p>The youngest family member to join the business, plays an important role in strengthening the firm&rsquo;s research potential.</p>
     
     <hr /></div>
     
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-    <h3>Milind Karmarkar</h3>
+    <h4>Milind Karmarkar</h4>
     
     <p>A chartered accountant by profession, Milind joined the firm over 30 years ago. He has played a key role in setting up the organisation&rsquo;s research team. He is currently the Fund Manager of the PMS division.</p>
     
     <hr /></div>
     
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-    <h3>Bhavesh Doshi</h3>
+    <h4>Bhavesh Doshi</h4>
     
     <p>He has been with Dalal &amp; Broacha for over 25 years and has been responsible for setting up the firm&rsquo;s Fixed Income &amp; Distribution Desk.</p>
     
     <hr />
     </div>
     
+    <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <h4>Hiren Shah</h4>
+    
+    <p>He is backed by an experience of 50 years in various fields, ranging from merchant banking to broking. Hiren has been with Dalal &amp; Broacha for the past 25 years and is responsible for managing the human resources, administration and strategic planning.</p>
+    
+    <hr /></div>-->
     </div>
     </div>
     </section>
     </div>
-    <button type="button" class="right-closebtn" onclick="closeTeam()" aria-label="Close team overlay">&times;</button></div>
+    <a class="right-closebtn" href="javascript:void(0)" onclick="closeTeam()">&times;</a></div>
     </div>
     </section>
     
     <section class="section4" id="contact">
     <div class="container">
     <h2>Contact Us</h2>
-    <p class="lead contact-subhead">In case of any Feedback/Grievances kindly post here.</p>
+    <br><h4>In case of any Feedback/Grievances kindly post here.</h4>
     
     <div class="contact-form">
     
     <div class="col-lg-12 col-md-12 col-sm-8 col-xs-12">
-    <form action="email.php" method="post" novalidate>
-        <div class="form-group">
-            <label for="fname">Name</label>
-            <input class="module module-up form-control" id="fname" name="name" placeholder="Name" type="text" aria-required="true" autocomplete="name" />
-            <span class="error sr-only" id="fname-error" role="alert"></span>
-        </div>
-        <div class="form-group">
-            <label for="email">Email Address</label>
-            <input class="module module-up form-control" id="email" name="email" placeholder="Email Address" type="email" aria-required="true" autocomplete="email" />
-            <span class="error sr-only" id="email-error" role="alert"></span>
-        </div>
-        <div class="form-group">
-            <label for="mobile">Contact Number</label>
-            <input class="module module-up form-control" id="mobile" name="mobile" placeholder="Contact Number" type="tel" aria-required="true" autocomplete="tel" inputmode="numeric" />
-            <span class="error sr-only" id="mobile-error" role="alert"></span>
-        </div>
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="module module-up form-control" id="message" name="msg" placeholder="Message" aria-required="true"></textarea>
-            <span class="error sr-only" id="message-error" role="alert"></span>
-        </div>
-        <button class="pull-right module module-up btn btn-primary" id="submit_btn" name="submit" type="submit">Submit</button>
+    <form >
+        <input class="module module-up" id="fname" name="name" placeholder="Name" type="text" /> 
+        <input class="module module-up" id="email" name="email" placeholder="Email ID" type="email" /> 
+        <input class="module module-up" id="mobile" name="mobile" placeholder="Contact No." type="text" autocomplete="on"/>
+        <textarea class="module module-up" id="message" name="msg" placeholder="Message"></textarea> 
+        <input class="pull-right module module-up" id="submit_btn" name="submit" placeholder="Submit" type="submit" />
     </form>
     </div>
     </div>
     <div class="col-lg-12 col-md-12 col-sm-8 col-xs-12">
-    <h3>Investor Grievances Escalation Matrix</h3>
+    <h4>Investor Grievances Escalation Matrix</h4>
     <table id="escalation_table" class="table table-bordered">
-        <caption class="sr-only">Investor Grievances Escalation Matrix</caption>
-        <thead>
         <tr>
             <th style="text-align:center;">Details of</th>
             <th style="text-align:center;">Contact Person</th>
@@ -389,10 +414,10 @@
     </table>
     <p>In absence of response/complaint not addressed to your satisfaction, you may lodge a complaint with:
         <ul style="margin-left:3rem">
-        <li>SEBI at <a href="https://scores.sebi.gov.in/" target="_blank" rel="noopener noreferrer">https://scores.sebi.gov.in</a></li>
-        <li>BSE at <a href="https://bsecrs.bseindia.com/ecomplaint/frmInvestorHome.aspx" target="_blank" rel="noopener noreferrer">https://bsecrs.bseindia.com/ecomplaint/frmInvestorHome.aspx</a></li>
-        <li>NSE at <a href="https://investorhelpline.nseindia.com/NICEPLUS/" target="_blank" rel="noopener noreferrer">https://investorhelpline.nseindia.com/NICEPLUS/</a></li>
-        <li>CDSL at <a href="https://www.cdslindia.com/Footer/grievances.aspx" target="_blank" rel="noopener noreferrer">https://www.cdslindia.com/Footer/grievances.aspx</a></li>
+        <li>SEBI at <a href="https://scores.sebi.gov.in/" aria-label = "scores"  target="_blank">https://scores.sebi.gov.in</a></li>
+        <li>BSE at <a href="https://bsecrs.bseindia.com/ecomplaint/frmInvestorHome.aspx" target="_blank">https://bsecrs.bseindia.com/ecomplaint/frmInvestorHome.aspx</a></li>
+        <li>NSE at <a href="https://investorhelpline.nseindia.com/NICEPLUS/" target="_blank">https://investorhelpline.nseindia.com/NICEPLUS/</a></li>
+        <li>CDSL at <a href="https://www.cdslindia.com/Footer/grievances.aspx" target="_blank">https://www.cdslindia.com/Footer/grievances.aspx</a></li>
     </ul>
     <br>Please quote your Service Ticket/Complaint Ref No. while raising your complaint at SEBI SCORES/Exchange portal/Depository portal.</p>
     </div>
@@ -402,7 +427,7 @@
     
     <div class="container-fluid">
     <div class="row">
-    <div class="gmaps"><iframe height="400px" data-src="https://snazzymaps.com/embed/6246" title="Office location map" style="border:none;" width="100%" loading="lazy"></iframe>
+    <div class="gmaps"><iframe height="400px" src="https://snazzymaps.com/embed/6246" aria-label="office map" style="border:none;" width="100%"></iframe>
     
     <div class="map-section">
     <div class="map-toggle">
@@ -426,11 +451,11 @@
     
     <div class="career">
     <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-    <h3>OUR PEOPLE ARE OUR ASSETS</h3>
+    <h4>OUR PEOPLE ARE OUR ASSETS</h4>
     
     <p>At Dalal &amp; Broacha, we strive to nurture the best talent for each role and competency. Being an enterprise driven by ethics and excellence, Dalal &amp; Broacha looks for people who mirror and inculcate these principles in their professional lives. We encourage our employees to think outside the box without compromising on our founding ethics and principles.</p>
     
-    <h4>Current Openings at Dalal &amp; Broacha</h4>
+    <h5><br>Current Openings at Dalal & Broacha</h5>
     <table style="width:100%" border: 3px solid black;>          
       <tr>
         <th></th>
@@ -455,10 +480,10 @@
     </table>
     
     </div>
-    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12"><img class="img-responsive module module-fade-in" src="img/career.png" width="1200" height="750" alt="Careers at Dalal &amp; Broacha" /></div>
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12"><img class="img-responsive module module-fade-in" src="img/career.png" /></div>
     
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 detail module module-fade-in">
-    <p><a href="tel:+912222851333">+91 (022) 2285 1333</a> <span aria-hidden="true">&nbsp;/&nbsp;</span> <a href="tel:+912222822992">+91 (022) 2282 2992</a></p>
+    <p><a href="tel:+9102222851333">+91 (022) 2285 1333 &nbsp;/&nbsp;</a> <a href="tel:+9102222822992">+91 (022) 2282 2992</a></p>
     
     <p><a href="mailto:careers@dalal-broacha.com">careers@dalal-broacha.com</a></p>
     </div>
@@ -506,36 +531,33 @@
     </div>
 </div>
 <p class="big"><span style="font-size:12px;"><b>For any investor grievances or complaints, kindly contact:</b> <a class="underline" style="font-size:12px;" href="mailto:compliance.officer@dalal-broacha.com">compliance.officer@dalal-broacha.com</a></span></p>
-<p class="big"><span style="font-size:12px;"><b>Compliance Officer Details: Mr. Praful Trivedi</b><a class="underline" style="font-size:12px;" href="mailto:compliance.officer@dalal-broacha.com">compliance.officer@dalal&ndash;broacha.com</a>.<a class="underline" style="font-size:12px;" href="tel:+91672141468">022 67141468</a></span></p>
+<p class="big"><span style="font-size:12px;"><b>Compliance Officer Details: Mr. Praful Trivedi</b><a class="underline" style="font-size:12px;" href="mailto:compliance.officer@dalal-broacha.com">compliance.officer@dalal&ndash;broacha.com</a>.<a class="underline" style="font-size:12px;" href="tel:+67141468">67141468</a></span></p>
 <p><span style="font-size:14px;">SEBI Registration Nos. : BSE Cash / BSE Deri / NSE Cash / NSE Deri: INZ000210337 | CDSL: IN &ndash; DP &ndash; 421 &ndash; 2019 | PMS: INP000001975 | Research Analyst: INH000001246</span></p>
 <p><b>GO TO:</b> <a href="http://www.nseindia.com/" target="_blank" style="font-size:12px;">NSE</a> | <a href="http://www.bseindia.com/" target="_blank" style="font-size:12px;">BSE</a> | <a href="http://www.cdslindia.com/" target="_blank" style="font-size:12px;">CDSL</a> | <a href=" https://smartodr.in" target="_blank" style="font-size:12px;">SMARTODR</a></p>
 <p class="big"><span style="font-size:16px;">
-<a href="pdfs/D&amp;B disclaimer.pdf" target="_blank" rel="noopener noreferrer">Disclaimer</a>
-| <a href="circulars.html" target="_blank" rel="noopener noreferrer">Circulars</a>
-| <a href="pdfs/Saarthi 2.0 Mobile App for Investors.pdf" target="_blank" rel="noopener noreferrer">Saarthi 2.0 Mobile App for Investors</a>
-| <a href="pdfs/RISK DISCLOSURE ON DERIVATIVES.pdf" target="_blank" rel="noopener noreferrer">Risk Disclosure On Derivatives</a> 
-| <a href="pdfs/MANDATORY DISPLAY.pdf" target="_blank" rel="noopener noreferrer">Mandatory Display</a>
-| <a href="downloadable_forms.html" target="_blank" rel="noopener noreferrer">Downloadable Forms</a> | <a target="_blank" href="investorcharterandcomplaints.html">INVESTOR CHARTER AND COMPLAINTS</a>
-| <a href="pdfs/Link Pan and Aadhaar Imediately.pdf" target="_blank" rel="noopener noreferrer">Link Pan and Aadhaar</a>
-| <a href="pdfs/Commission Disclosure.pdf" target="_blank" rel="noopener noreferrer">MF Commissions</a> | <a href="pdfs/Advisory for Investors.pdf" target="_blank" rel="noopener noreferrer"> Advisory for Investors</a> 
-| <a href="pdfs/AMFI Details 13062024.pdf" target="_blank" rel="noopener noreferrer">AMFI DETAILS</a>
-| <a href="pdfs/AIF Details.pdf" target="_blank" rel="noopener noreferrer">AIF DETAILS</a>
-| <a href="pdfs/Important Regulatory alerts.pdf" target="_blank" rel="noopener noreferrer"> Important Regulatory Alerts </a> | <a href="uploads/Attention-Investors.pdf" target="_blank" rel="noopener noreferrer">Attention Investor</a> 
-| <a href="pdfs/INVESTORS EDUCATION.pdf" target="_blank" rel="noopener noreferrer">Investor Education</a>
-| <a href="pdfs/UPI Valid Handle  DBSBPL.pdf" target="_blank" rel="noopener noreferrer">BANK ACCOUNT</a> | <a href="pdfs/Fund Payout Request Letter.pdf" target="_blank" rel="noopener noreferrer">Fund Payout Request Letter</a> 
-| <a href="https://www.dalalbroacha.com/ClientPortal/Research" target="_blank" rel="noopener noreferrer">Research Reports</a> 
-| <a href="pdfs/DBSPL CSR Policy.pdf" target="_blank" rel="noopener noreferrer">CSR Policy</a> | <a href="External_Links.html" target="_blank" rel="noopener noreferrer"> SCORES 2.0 </a>
-| <a href="pdfs/NFLQ.pdf" target="_blank" rel="noopener noreferrer"> NFLQ </a>
-| <a href="Advisory for KYC updation.html" target="_blank" rel="noopener noreferrer"> Advisory for KYC updation </a> 
-| <a href="pdfs/Notification on segregation and monitoring of collateral at client level.pdf" target="_blank" rel="noopener noreferrer"> segregation and monitoring of collateral at client level </a>
-| <a href="pdfs/PMS Distributor List - 28082026.pdf" target="_blank" rel="noopener noreferrer"> PMS Distributor List </a>    
+<a href="pdfs/D&amp;B disclaimer.pdf" target="_blank">Disclaimer</a>
+| <a href="circulars.html" target="_blank">Circulars</a>
+| <a href="pdfs/Saarthi 2.0 Mobile App for Investors.pdf" target="_blank">Saarthi 2.0 Mobile App for Investors</a>
+| <a href="pdfs/RISK DISCLOSURE ON DERIVATIVES.pdf" target="_blank">Risk Disclosure On Derivatives</a> 
+| <a href="pdfs/MANDATORY DISPLAY.pdf" target="_blank">Mandatory Display</a>
+| <a href="downloadable_forms.html" target="_blank">Downloadable Forms</a> | <a target="_blank" href="investorcharterandcomplaints.html">INVESTOR CHARTER AND COMPLAINTS</a>
+| <a href="pdfs/Link Pan and Aadhaar Imediately.pdf" target="_blank">Link Pan and Aadhaar</a>
+| <a href="pdfs/Commission Disclosure.pdf" target="_blank">MF Commissions</a> | <a href="pdfs/Advisory for Investors.pdf" target="_blank"> Advisory for Investors</a> 
+| <a href="pdfs/AMFI Details 13062024.pdf" target="_blank">AMFI DETAILS</a>
+| <a href="pdfs/AIF Details.pdf" target="_blank">AIF DETAILS</a>
+| <a href="pdfs/Important Regulatory alerts.pdf" target="_blank"> Important Regulatory Alerts </a> | <a href="uploads/Attention-Investors.pdf" target="_blank">Attention Investor</a> 
+| <a href="pdfs/INVESTORS EDUCATION.pdf" target="_blank">Investor Education</a>
+| <a href="pdfs/UPI Valid Handle  DBSBPL.pdf" target="_blank">BANK ACCOUNT</a> | <a href="pdfs/Fund Payout Request Letter.pdf" target="_blank">Fund Payout Request Letter</a> 
+| <a href="https://www.dalalbroacha.com/ClientPortal/Research" target="_blank">Research Reports</a> 
+| <a href="pdfs/DBSPL CSR Policy.pdf" target="_blank">CSR Policy</a> | <a href="External_Links.html" target="_blank"> SCORES 2.0 </a>
+| <a href="pdfs/NFLQ.pdf" target="_blank"> NFLQ </a>
+| <a href="Advisory for KYC updation.html" target="_blank"> Advisory for KYC updation </a> 
+| <a href="pdfs/Notification on segregation and monitoring of collateral at client level.pdf" target="_blank"> segregation and monitoring of collateral at client level </a>
+| <a href="pdfs/PMS Distributor List - 28082026.pdf" target="_blank"> PMS Distributor List </a>    
 </span></p>
-<!-- | <a href="pdfs/Attention Investors_30082021.pdf" target="_blank" rel="noopener noreferrer">Attention Investor</a>  -->
+<!-- | <a href="pdfs/Attention Investors_30082021.pdf" target="_blank">Attention Investor</a>  -->
 <p>Regd. Office: 506, Maker Chambers V, 221, Nariman Point, Mumbai - 400021.</p>
 <div class="marquee-container">
-<button class="anim-toggle anim-toggle--marquee" id="marquee-toggle" aria-label="Pause scrolling text" title="Pause/Play scrolling text">
-    <span class="anim-toggle-icon" aria-hidden="true"><span class="pause-bars"><span class="pause-bar"></span><span class="pause-bar"></span></span><span class="play-triangle"></span></span>
-</button>
 <div class = "marquee-track">
 <p color:="">
     <!-- <marquee behavior="scroll" direction="left">  -->
@@ -565,7 +587,7 @@
             <!--<li><b>“Inoperative” PAN </b>– You will not be able to conduct financial transactions once your PAN is marked as inoperative after September 30</li>
                 <li><b>Penalty</b> – You will be liable to pay a penalty if your PAN is not linked with your Aadhaar as per the newly added Section 234H of the Income Tax Act, 1961</li>
                 <br>
-                <b style="text-align:center;">Not sure whether your PAN and Aadhaar are linked? <a href="https://t.customercommunication.sharekhan.com/r/?id=h50d747b6,32a2994,32a2997" style="color:blue" target="_blank" rel="noopener noreferrer"><b>Tap here</b></a>  to check in a matter of seconds.</b>
+                <b style="text-align:center;">Not sure whether your PAN and Aadhaar are linked? <a href="https://t.customercommunication.sharekhan.com/r/?id=h50d747b6,32a2994,32a2997" style="color:blue" target="_blank"><b>Tap here</b></a>  to check in a matter of seconds.</b>
                 <br>
                 <B><br style="text-align:left;">Attention Mutual Fund investors</b>
                 <br>
@@ -623,9 +645,9 @@
                 <br/>If there is any change in your existing Email Id/ Mobile number, you need to submit a modification form. For grouping of family accounts, please submit the family declaration. To update latest income range only, please submit Income Declaration Form.
                 All forms can be downloaded from our website under the tab DOWNLOADABLE FORMS
         
-                <br/>Link : <a href="https://www.dalal-broacha.com/downloadable_forms.html" style="color:blue" target="_blank" rel="noopener noreferrer"><b>downloadable forms</b></a> 
+                <br/>Link : <a href="https://www.dalal-broacha.com/downloadable_forms.html" style="color:blue" target="_blank"><b>downloadable forms</b></a> 
                 <br/>
-                <br/>We request you to contact or email from your registered Email ID to your respective Branch/ AP / Dealer/HO or send email on <a href="pranali.pange@dalal-broacha.com " style="color:blue" target="_blank" rel="noopener noreferrer"><u>pranali.pange@dalal-broacha.com</u></a> and update the details by <text style="color:red">30th june, 2022</text>. In absence of mandatory KYC data, the account will get deactivated and the client will be allowed to trade only after Re-KYC. Kindly ignore if already updated.
+                <br/>We request you to contact or email from your registered Email ID to your respective Branch/ AP / Dealer/HO or send email on <a href="pranali.pange@dalal-broacha.com " style="color:blue" target="_blank"><u>pranali.pange@dalal-broacha.com</u></a> and update the details by <text style="color:red">30th june, 2022</text>. In absence of mandatory KYC data, the account will get deactivated and the client will be allowed to trade only after Re-KYC. Kindly ignore if already updated.
                 <br/>
                 <br/><b>NOTE: Email ID: <u>notprovided@notprovided.com</u> and mobile number: 6666666666 is not allowed as the new guidelines.</b>
                 <br/>
@@ -654,46 +676,9 @@
 <!-- model window-->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --><script src="js/jquery-3.2.1.min.js"></script><script>
-            function openTeam() {
-                var overlay = document.getElementById("team");
-                overlay.style.width = "100%";
-                var firstFocusable = overlay.querySelector("button, [href], input, select, textarea, [tabindex]:not([tabindex='-1'])");
-                if (firstFocusable) { setTimeout(function() { firstFocusable.focus(); }, 100); }
-                overlay.addEventListener('keydown', trapFocus);
-            }
-            function closeTeam() {
-                var overlay = document.getElementById("team");
-                overlay.style.width = "0%";
-                overlay.removeEventListener('keydown', trapFocus);
-                var trigger = document.querySelector('.arrow-team a');
-                if (trigger) trigger.focus();
-            }
-            function closeTime() {
-                var overlay = document.getElementById("timeline");
-                overlay.style.width = "0%";
-                overlay.removeEventListener('keydown', trapFocus);
-                var trigger = document.querySelector('.arrow-team a');
-                if (trigger) trigger.focus();
-            }
-            function trapFocus(e) {
-                if (e.key === 'Escape') {
-                    if (document.getElementById("team").style.width === "100%") closeTeam();
-                    if (document.getElementById("timeline").style.width === "100%") closeTime();
-                    return;
-                }
-                if (e.key === 'Tab') {
-                    var overlay = document.getElementById("team");
-                    var timeline = document.getElementById("timeline");
-                    var active = (overlay.style.width === "100%") ? overlay : (timeline.style.width === "100%") ? timeline : null;
-                    if (!active) return;
-                    var focusable = active.querySelectorAll("button, [href], input, select, textarea, [tabindex]:not([tabindex='-1'])");
-                    if (focusable.length === 0) return;
-                    var first = focusable[0], last = focusable[focusable.length - 1];
-                    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-                    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-                }
-            }
-        </script><!-- Latest compiled and minified JavaScript --><script src="js/bootstrap.min.js"></script><script src="js/main.js"></script><script>
+            function openTeam() { document.getElementById("team").style.width = "100%"; }
+            function closeTeam() { document.getElementById("team").style.width = "0%"; }
+        </script><!-- Latest compiled and minified JavaScript --><script src="js/bootstrap.js"></script><script src="js/main.js"></script><script>
             $(function() {
                 //--------comment this section June 30, 2021.
                 // $(window).on('load',function(){
@@ -710,54 +695,31 @@
                     var error = false;
                     var email_regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
                     if($('#fname').val() == '') {
-                        $('#fname-error').text('Please enter your name.').removeClass('sr-only').addClass('error');
-                        $('#fname').attr('aria-invalid', 'true');
+                        $('#fname').next().html('Please enter your name.');
                         error = true;
-                    } else {
-                        $('#fname-error').addClass('sr-only').removeClass('error');
-                        $('#fname').attr('aria-invalid', 'false');
                     }
                     if($('#email').val() == '') {
-                        $('#email-error').text('Please enter your email address.').removeClass('sr-only').addClass('error');
-                        $('#email').attr('aria-invalid', 'true');
+                        $('#email').next().html('Please enter your email address.');
                         error = true;
                     } else {
                         if(!email_regex.test($('#email').val())) {
-                            $('#email-error').text('Please enter a valid email address in the format name@example.com.').removeClass('sr-only').addClass('error');
-                            $('#email').attr('aria-invalid', 'true');
+                            $('#email').next().html('Please enter a valid email address.');
                             error = true;
-                        } else {
-                            $('#email-error').addClass('sr-only').removeClass('error');
-                            $('#email').attr('aria-invalid', 'false');
                         }
                     }
                     if($('#mobile').val() == '') {
-                        $('#mobile-error').text('Please enter your mobile number.').removeClass('sr-only').addClass('error');
-                        $('#mobile').attr('aria-invalid', 'true');
+                        $('#mobile').next().html('Please enter your mobile number.');
                         error = true;
                     } else {
                         if(isNaN($('#mobile').val())) {
-                            $('#mobile-error').text('Please enter a valid 10-digit mobile number.').removeClass('sr-only').addClass('error');
-                            $('#mobile').attr('aria-invalid', 'true');
+                            $('#mobile').next().html('Please enter a valid mobile number.');
                             error = true;
                         } else {
                             if($('#mobile').val().length != 10) {
-                                $('#mobile-error').text('Please enter a valid 10-digit mobile number.').removeClass('sr-only').addClass('error');
-                                $('#mobile').attr('aria-invalid', 'true');
+                                $('#mobile').next().html('Please enter a valid mobile number.');
                                 error = true;
-                            } else {
-                                $('#mobile-error').addClass('sr-only').removeClass('error');
-                                $('#mobile').attr('aria-invalid', 'false');
                             }
                         }
-                    }
-                    if($('#message').val() == '') {
-                        $('#message-error').text('Please enter your message.').removeClass('sr-only').addClass('error');
-                        $('#message').attr('aria-invalid', 'true');
-                        error = true;
-                    } else {
-                        $('#message-error').addClass('sr-only').removeClass('error');
-                        $('#message').attr('aria-invalid', 'false');
                     }
                     if(!error) {
                         $.ajax({
