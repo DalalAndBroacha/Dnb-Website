@@ -443,3 +443,144 @@ select:focus {
 	height: 2px;
 	border-radius: 1px;
 }
+
+/* =================================================================
+   WCAG 2.1 AA — Comprehensive Color Contrast Remediation
+   ================================================================= */
+
+/* --- Headings --- */
+h2 {
+	color: #c62828 !important; /* 5.8:1 contrast on white (WCAG AA requirement: 4.5:1) */
+}
+
+/* --- Section 2: Our Services (#products) --- */
+section.section2 {
+	background-color: #ffffff;
+}
+section.section2 .panel.panel-default {
+	background-color: #ffffff !important;
+	border: 1px solid #d5d5d5 !important;
+	border-radius: 6px !important;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+}
+section.section2 .panel-default > .panel-heading {
+	background-color: #ffffff !important;
+	border-bottom: 1px solid #eeeeee !important;
+	color: #111111 !important;
+}
+section.section2 li,
+section.section2 li.module-fade-in,
+section.section2 .module-fade-in {
+	opacity: 1 !important; /* Prevents opacity fade from degrading text contrast */
+}
+section.section2 a {
+	color: #111111 !important;
+	text-decoration: underline !important;
+}
+section.section2 a:hover,
+section.section2 a:focus {
+	color: #c62828 !important;
+	text-decoration: underline !important;
+}
+section.section2 strong {
+	color: #111111 !important; /* 18.7:1 contrast on #ffffff (WCAG AA requirement: 4.5:1) */
+	font-weight: 700 !important;
+	font-size: 16px !important;
+	display: inline-block !important;
+	margin-bottom: 6px !important;
+}
+section.section2 p {
+	color: #262626 !important; /* 14.5:1 contrast on #ffffff (WCAG AA requirement: 4.5:1) */
+	font-weight: 400 !important;
+	font-size: 14px !important;
+	line-height: 1.6 !important;
+	margin-top: 4px !important;
+}
+
+/* --- Tables & Captions --- */
+caption,
+table caption {
+	color: #222222 !important; /* 15.9:1 contrast on white */
+	font-weight: 600 !important;
+}
+table th {
+	color: #111111 !important;
+	background-color: #f7f7f7 !important;
+	border-color: #cccccc !important;
+}
+table td {
+	color: #262626 !important;
+	border-color: #e0e0e0 !important;
+}
+
+/* --- Form Controls & Placeholders (WCAG 1.4.3 & 1.4.11) --- */
+input.form-control,
+textarea.form-control {
+	color: #1a1a1a !important;
+	background-color: #ffffff !important;
+	border: 1.5px solid #767676 !important; /* Meets 3:1 non-text contrast requirement */
+}
+input.form-control:focus,
+textarea.form-control:focus {
+	border-color: #0053b3 !important;
+	outline: 3px solid #0053b3 !important;
+	outline-offset: 2px !important;
+}
+::placeholder,
+::-webkit-input-placeholder,
+:-ms-input-placeholder,
+::-moz-placeholder {
+	color: #555555 !important; /* 7.04:1 contrast on white */
+	opacity: 1 !important;
+}
+
+/* --- Portals Dropdown Menu --- */
+.navbar-default .navbar-nav > li.equity .dropdown-menu {
+	background-color: #ffffff !important;
+	border: 1px solid #cccccc !important;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
+}
+.navbar-default .navbar-nav > li.equity .dropdown-menu > li > a {
+	color: #1a1a1a !important;
+	font-weight: 600 !important;
+	padding: 8px 16px !important;
+}
+.navbar-default .navbar-nav > li.equity .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li.equity .dropdown-menu > li > a:focus {
+	background-color: #c62828 !important;
+	color: #ffffff !important;
+	text-decoration: none !important;
+}
+
+/* --- Careers Section --- */
+section.section5 .career .detail p,
+section.section5 .career .detail a {
+	color: #c62828 !important; /* 5.8:1 contrast */
+}
+section.section5 .career .detail a:hover,
+section.section5 .career .detail a:focus {
+	color: #111111 !important;
+}
+
+/* --- Global Link States --- */
+a:hover,
+a:focus {
+	color: #c62828 !important;
+}
+
+/* --- Footer Contrast --- */
+footer {
+	background-color: #f4f4f5 !important;
+}
+footer p {
+	color: #333333 !important; /* 11.5:1 contrast on #f4f4f5 */
+}
+footer p.big,
+footer p.big a {
+	color: #222222 !important; /* 13.8:1 contrast on #f4f4f5 */
+}
+footer p.big a:hover,
+footer p.big a:focus {
+	color: #c62828 !important;
+}
+
