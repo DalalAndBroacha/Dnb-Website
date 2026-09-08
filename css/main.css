@@ -69,8 +69,8 @@ section.section1 .ship { position: absolute; bottom: 0; text-align: right; min-h
 section.section1 .ship img { width: 59%; }
 section.section1 .bands { position: absolute; z-index: 5; width: 100%; display: block; margin: 0 auto; position: relative; }
 section.section1 .band span, section.section1 .band1 span { font-family: 'Montserrat', sans-serif; display: inline-block; font-weight: 600; font-size: 30px; font-size: 2vw;  text-transform: uppercase; }
-section.section1 .band { width: 55%; padding: 0 7%; background: #ee3426; position: absolute; bottom: 5%; pointer-events: none; }
-section.section1 .band1 { width: 100%; padding: 0 7%; background: #ee3426; position: absolute; pointer-events: none; }
+section.section1 .band { width: 60%; padding: 0 7%; background: #ee3426; position: absolute; bottom: 5%; pointer-events: none; }
+section.section1 .band1 { width: 60%; padding: 0 7%; background: #ee3426; position: absolute; pointer-events: none; }
 section.section1 li {   }
 
 
@@ -253,11 +253,13 @@ footer p.big, footer p.big a { font-size: 11px; color: #4a4a4a; text-transform: 
     section.section1 { min-height: 75vh; }
     section.section1 .banner { min-height: 85vh; }
     section.section1 .ship img { width: 62%; }
-    section.section1 .band { position: relative; width: 45%; }
+    section.section1 .band { position: relative; }
+    section.section1 .band, section.section1 .band1 { width: 50%; }
     section.section1 .band:before, section.section1 .band1:before { border-top: solid 4.5vh #ee3426; }
     section.section1 .band span, section.section1 .band1 span { font-size: 1.5vw; }
-    section.section1 .band span { padding: 0 0 0 35%; }
-    section.section1 .band1 span { padding: 0 0 0 15.7%; }
+    /* Both strips are the same width, so the text runs from the bar's own 7% inset with
+       no extra indent - that is the only way the longest slide still fits on one line */
+    section.section1 .band span, section.section1 .band1 span { padding: 0; }
     
     section.section2 { min-height: 50vh; }
     
@@ -350,8 +352,8 @@ section.section2 .services .panel-default>.panel-heading { width: 100%; }
     section.section1 .ship { min-height: 57vh;  }
     section.section1 .ship img { width: 100%; }
     section.section1 .banner .bands { padding-top: 40%; z-index: 5; }
-    section.section1 .band { bottom: 1%; width: 100%; }
-    section.section1 .band, section.section1 .band1 { padding-top: 0.8%; padding-bottom: 0.8%; }
+    section.section1 .band { bottom: 1%; }
+    section.section1 .band, section.section1 .band1 { width: 100%; padding-top: 0.8%; padding-bottom: 0.8%; }
     section.section1 .band span, section.section1 .band1 span { font-size: 5vw; color: #fff; padding: 0 0%; }
        
     section.section2 { min-height: 60vh; }
@@ -383,8 +385,7 @@ section.section2 .services .panel-default>.panel-heading { width: 100%; }
     section.section1 .ship {  z-index: 0; }
     section.section1 .ship img { width: 100%; }
     section.section1 .banner .bands { padding-top: 75%; }
-    section.section1 .band { width: 100%; }
-    section.section1 .band, section.section1 .band1 { padding-top: 1%; padding-bottom: 1%; }
+    section.section1 .band, section.section1 .band1 { width: 100%; padding-top: 1%; padding-bottom: 1%; }
     section.section1 .band span, section.section1 .band1 span { font-size: 5vw; color: #fff; }
     
     
