@@ -181,8 +181,7 @@
             <ul class="panel-group services visible-xs" id="services-mobile"></ul>
         </div>
     </section>
-    </main>
-    
+
     <section class="section3" id="about">
     <div class="container">
     <h2>Our Corporate Profile</h2>
@@ -326,16 +325,19 @@
     </div>
     <div class="col-lg-12 col-md-12 col-sm-8 col-xs-12">
     <h3>Investor Grievances Escalation Matrix</h3>
+    <!-- Scroll container keeps the 6-column matrix from forcing the whole page to scroll
+         sideways on narrow screens (WCAG 1.4.10); focusable so it can be scrolled by keyboard. -->
+    <div class="table-responsive" role="region" aria-label="Investor Grievances Escalation Matrix, scrollable table" tabindex="0">
     <table id="escalation_table" class="table table-bordered">
         <caption class="sr-only">Investor Grievances Escalation Matrix</caption>
         <thead>
         <tr>
-            <th style="text-align:center;">Details of</th>
-            <th style="text-align:center;">Contact Person</th>
-            <th style="text-align:center;">Address</th>
-            <th style="text-align:center;">Contact Number</th>
-            <th style="text-align:center;">E-mail Id</th>
-            <th style="text-align:center;">Operational/Working Hours</th>
+            <th scope="col" style="text-align:center;">Details of</th>
+            <th scope="col" style="text-align:center;">Contact Person</th>
+            <th scope="col" style="text-align:center;">Address</th>
+            <th scope="col" style="text-align:center;">Contact Number</th>
+            <th scope="col" style="text-align:center;">E-mail Id</th>
+            <th scope="col" style="text-align:center;">Operational/Working Hours</th>
         </tr>
         <tr>
             <td>Customer care</td>
@@ -387,6 +389,7 @@
         </tr>
         
     </table>
+    </div>
     <p>In absence of response/complaint not addressed to your satisfaction, you may lodge a complaint with:
         <ul style="margin-left:3rem">
         <li>SEBI at <a href="https://scores.sebi.gov.in/" target="_blank" rel="noopener noreferrer">https://scores.sebi.gov.in</a></li>
@@ -431,10 +434,11 @@
     <p>At Dalal &amp; Broacha, we strive to nurture the best talent for each role and competency. Being an enterprise driven by ethics and excellence, Dalal &amp; Broacha looks for people who mirror and inculcate these principles in their professional lives. We encourage our employees to think outside the box without compromising on our founding ethics and principles.</p>
     
     <h3>Current Openings at Dalal &amp; Broacha</h3>
-    <table style="width:100%" border: 3px solid black;>          
+    <table style="width:100%">
+      <caption class="sr-only">Current openings at Dalal &amp; Broacha</caption>
       <tr>
-        <th style="text-align: left;">Position / Role</th>
-        <th style="text-align: center;">Experience required</th>
+        <th scope="col" style="text-align: left;">Position / Role</th>
+        <th scope="col" style="text-align: center;">Experience required</th>
       </tr>
       <tr>
         <td>Mutual Funds Research Analyst</td>
@@ -465,6 +469,7 @@
     </div>
     </div>
     </section>
+    </main>
 </div>
 
 <footer>
