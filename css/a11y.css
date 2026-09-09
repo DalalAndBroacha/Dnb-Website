@@ -35,6 +35,15 @@
 	outline: 3px solid #0053b3;
 	outline-offset: 3px;
 }
+/* Bootstrap's `a:focus { outline: -webkit-focus-ring-color auto 5px }` is (0,1,1)
+   and beat the rule above, so links fell back to the browser's system-accent ring
+   (~2.2:1 on white — under the 3:1 that 1.4.11 needs, and it varies by OS theme).
+   Same specificity, later in the cascade, so this wins. */
+a:focus-visible,
+a:focus-visible:hover {
+	outline: 3px solid #0053b3;
+	outline-offset: 3px;
+}
 :focus:not(:focus-visible) {
 	outline: none;
 }
@@ -353,9 +362,12 @@ select:focus {
 	box-shadow: 0 4px 18px rgba(211, 47, 47, 0.5);
 	border-color: rgba(255, 255, 255, 0.9);
 }
+/* A white ring was invisible against the white page behind the button (1:1).
+   Dark ring for contrast with the page, white halo to separate it from the red fill. */
 .anim-toggle:focus {
-	outline: 3px solid #fff;
+	outline: 3px solid #0053b3;
 	outline-offset: 3px;
+	box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.95);
 }
 .anim-toggle:active {
 	transform: scale(0.92);
@@ -425,6 +437,49 @@ section.reports ol ul {
 	list-style: circle;
 	padding-left: 28px;
 	margin: 4px 0 8px;
+}
+
+/* --- 2.4.7 Focus Visible / 1.4.11 Non-text Contrast: form controls ---
+   Bootstrap's .form-control:focus sets outline:0 and replaces it with a
+   rgba(102,175,233,.6) glow that reaches only 1.18:1 against the page — and its
+   specificity beats the global :focus-visible rule, so inputs were left with no
+   usable indicator. Restore a 3:1+ ring on every form control. */
+.form-control:focus,
+input.form-control:focus,
+select.form-control:focus,
+textarea.form-control:focus,
+.has-success .form-control:focus,
+.has-warning .form-control:focus,
+.has-error .form-control:focus,
+.dataTables_wrapper input:focus,
+.dataTables_wrapper select:focus {
+	outline: 3px solid #0053b3;
+	outline-offset: 2px;
+	border-color: #0053b3;
+	box-shadow: none;
+}
+
+/* Bootstrap also zeroes the outline on these, and each of those rules outweighs
+   the global :focus-visible rule. Restore the ring with matching specificity. */
+.btn:focus-visible,
+.dropdown-toggle:focus-visible,
+.navbar-toggle:focus-visible,
+.navbar-default .navbar-toggle:focus-visible,
+.dropdown-menu > li > a:focus-visible,
+.open > a:focus-visible,
+.btn-group .dropdown-toggle:focus-visible {
+	outline: 3px solid #0053b3;
+	outline-offset: 2px;
+}
+
+/* --- 1.4.11 Non-text Contrast: control boundaries ---
+   Bootstrap's #ccc borders reach only 1.61:1 against white, so the edge of an
+   input or select is not discernible. #767676 is 4.5:1 on white. */
+.form-control,
+.dataTables_wrapper input[type="search"],
+.dataTables_wrapper select,
+select.custom-select {
+	border: 1px solid #767676;
 }
 
 /* Marquee variant */
